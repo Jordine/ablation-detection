@@ -1,0 +1,242 @@
+{
+  "model": "Qwen/Qwen2.5-7B-Instruct",
+  "G": 4,
+  "partial_credit": false,
+  "epochs": [
+    {
+      "epoch": 1,
+      "mean_reward": 0.9758333333333333,
+      "mean_loss": -0.0011143784519905846,
+      "eval": {
+        "accuracy": 0.9642857142857143,
+        "times_chance": 27.0,
+        "samples": [
+          {
+            "layer": 0,
+            "predicted": 0,
+            "response": "0",
+            "correct": true
+          },
+          {
+            "layer": 1,
+            "predicted": 1,
+            "response": "Layer 1",
+            "correct": true
+          },
+          {
+            "layer": 2,
+            "predicted": 2,
+            "response": "Layer 2",
+            "correct": true
+          },
+          {
+            "layer": 3,
+            "predicted": 3,
+            "response": "Layer 3",
+            "correct": true
+          },
+          {
+            "layer": 4,
+            "predicted": 4,
+            "response": "Layer 4",
+            "correct": true
+          },
+          {
+            "layer": 27,
+            "predicted": 27,
+            "response": "Layer 27",
+            "correct": true
+          }
+        ]
+      }
+    },
+    {
+      "epoch": 2,
+      "mean_reward": 0.9891666666666666,
+      "mean_loss": -0.0006256990150238077,
+      "eval": {
+        "accuracy": 0.9642857142857143,
+        "times_chance": 27.0,
+        "samples": [
+          {
+            "layer": 0,
+            "predicted": 0,
+            "response": "0000",
+            "correct": true
+          },
+          {
+            "layer": 1,
+            "predicted": 1,
+            "response": "Layer 1",
+            "correct": true
+          },
+          {
+            "layer": 2,
+            "predicted": 2,
+            "response": "Layer 2",
+            "correct": true
+          },
+          {
+            "layer": 3,
+            "predicted": 3,
+            "response": "Layer 3",
+            "correct": true
+          },
+          {
+            "layer": 4,
+            "predicted": 4,
+            "response": "Layer 4",
+            "correct": true
+          },
+          {
+            "layer": 27,
+            "predicted": 27,
+            "response": "Layer 27",
+            "correct": true
+          }
+        ]
+      }
+    },
+    {
+      "epoch": 3,
+      "mean_reward": 0.9925,
+      "mean_loss": -0.0009993781909967462,
+      "eval": {
+        "accuracy": 1.0,
+        "times_chance": 28.0,
+        "samples": [
+          {
+            "layer": 0,
+            "predicted": 0,
+            "response": "000000000000000",
+            "correct": true
+          },
+          {
+            "layer": 1,
+            "predicted": 1,
+            "response": "Layer 1",
+            "correct": true
+          },
+          {
+            "layer": 2,
+            "predicted": 2,
+            "response": "Layer 2",
+            "correct": true
+          },
+          {
+            "layer": 3,
+            "predicted": 3,
+            "response": "Layer 3",
+            "correct": true
+          },
+          {
+            "layer": 4,
+            "predicted": 4,
+            "response": "Layer 4",
+            "correct": true
+          },
+          {
+            "layer": 27,
+            "predicted": 27,
+            "response": "Layer 27",
+            "correct": true
+          }
+        ]
+      }
+    },
+    {
+      "epoch": 4,
+      "mean_reward": 0.9933333333333333,
+      "mean_loss": -0.00045696189006169636,
+      "eval": {
+        "accuracy": 1.0,
+        "times_chance": 28.0,
+        "samples": [
+          {
+            "layer": 0,
+            "predicted": 0,
+            "response": "000000000000000",
+            "correct": true
+          },
+          {
+            "layer": 1,
+            "predicted": 1,
+            "response": "Layer 1",
+            "correct": true
+          },
+          {
+            "layer": 2,
+            "predicted": 2,
+            "response": "Layer 2",
+            "correct": true
+          },
+          {
+            "layer": 3,
+            "predicted": 3,
+            "response": "Layer 3",
+            "correct": true
+          },
+          {
+            "layer": 4,
+            "predicted": 4,
+            "response": "Layer 4",
+            "correct": true
+          },
+          {
+            "layer": 27,
+            "predicted": 27,
+            "response": "Layer 27",
+            "correct": true
+          }
+        ]
+      }
+    },
+    {
+      "epoch": 5,
+      "mean_reward": 0.9891666666666666,
+      "mean_loss": -0.0010864482074975966,
+      "eval": {
+        "accuracy": 1.0,
+        "times_chance": 28.0,
+        "samples": [
+          {
+            "layer": 0,
+            "predicted": 0,
+            "response": "000000000000000",
+            "correct": true
+          },
+          {
+            "layer": 1,
+            "predicted": 1,
+            "response": "Layer 1",
+            "correct": true
+          },
+          {
+            "layer": 2,
+            "predicted": 2,
+            "response": "Layer 2",
+            "correct": true
+          },
+          {
+            "layer": 3,
+            "predicted": 3,
+            "response": "Layer 3",
+            "correct": true
+          },
+          {
+            "layer": 4,
+            "predicted": 4,
+            "response": "Layer 4",
+            "correct": true
+          },
+          {
+            "layer": 27,
+            "predicted": 27,
+            "response": "Layer 27",
+            "correct": true
+          }
+        ]
+      }
+    }
+  ]
+}

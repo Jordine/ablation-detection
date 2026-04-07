@@ -4,19 +4,19 @@
   "epochs": [
     {
       "epoch": 1,
-      "loss": 1.0296751029900006,
+      "loss": 0.9642209151705106,
       "eval": {
-        "accuracy": 0.21428571428571427,
+        "accuracy": 0.35714285714285715,
         "chance": 0.03571428571428571,
-        "times_chance": 6.0,
+        "times_chance": 10.0,
         "false_positive": true,
-        "false_positive_response": "Layer 20",
+        "false_positive_response": "Layer 17",
         "per_layer": {
           "0": false,
-          "1": false,
+          "1": true,
           "2": false,
           "3": false,
-          "4": false,
+          "4": true,
           "5": false,
           "6": false,
           "7": false,
@@ -25,32 +25,32 @@
           "10": true,
           "11": false,
           "12": false,
-          "13": false,
+          "13": true,
           "14": false,
           "15": false,
           "16": false,
-          "17": false,
+          "17": true,
           "18": false,
-          "19": false,
-          "20": true,
-          "21": true,
+          "19": true,
+          "20": false,
+          "21": false,
           "22": true,
-          "23": false,
-          "24": true,
+          "23": true,
+          "24": false,
           "25": false,
-          "26": false,
+          "26": true,
           "27": true
         },
         "samples": [
           {
             "layer": 0,
-            "response": "LayerLayerLayerLayerLayerLayerLayerLayerLayerLayerLayerLayerLayerLayerLayerLayer",
+            "response": "1Layer\uff0c\n\n\n\n\n 2Layer",
             "correct": false
           },
           {
             "layer": 1,
-            "response": "Layer",
-            "correct": false
+            "response": "Layer 1",
+            "correct": true
           },
           {
             "layer": 2,
@@ -64,8 +64,8 @@
           },
           {
             "layer": 4,
-            "response": "Layer 3",
-            "correct": false
+            "response": "Layer 4",
+            "correct": true
           },
           {
             "layer": 27,
@@ -77,34 +77,34 @@
     },
     {
       "epoch": 2,
-      "loss": 0.6910263799127622,
+      "loss": 0.4561489559803463,
       "eval": {
-        "accuracy": 0.39285714285714285,
+        "accuracy": 0.75,
         "chance": 0.03571428571428571,
-        "times_chance": 11.0,
+        "times_chance": 21.0,
         "false_positive": true,
-        "false_positive_response": "Layer 21",
+        "false_positive_response": "Layer 25",
         "per_layer": {
-          "0": true,
+          "0": false,
           "1": true,
           "2": false,
-          "3": true,
-          "4": false,
-          "5": false,
+          "3": false,
+          "4": true,
+          "5": true,
           "6": false,
-          "7": false,
-          "8": false,
-          "9": false,
-          "10": false,
-          "11": false,
+          "7": true,
+          "8": true,
+          "9": true,
+          "10": true,
+          "11": true,
           "12": false,
-          "13": false,
+          "13": true,
           "14": false,
-          "15": false,
-          "16": false,
+          "15": true,
+          "16": true,
           "17": false,
-          "18": false,
-          "19": false,
+          "18": true,
+          "19": true,
           "20": true,
           "21": true,
           "22": true,
@@ -113,79 +113,6 @@
           "25": true,
           "26": true,
           "27": true
-        },
-        "samples": [
-          {
-            "layer": 0,
-            "response": "Layer\n0\n\n \n \n0\nLayerLayerLayer",
-            "correct": true
-          },
-          {
-            "layer": 1,
-            "response": "Layer 1",
-            "correct": true
-          },
-          {
-            "layer": 2,
-            "response": "Layer 1",
-            "correct": false
-          },
-          {
-            "layer": 3,
-            "response": "Layer 3",
-            "correct": true
-          },
-          {
-            "layer": 4,
-            "response": "Layer 1",
-            "correct": false
-          },
-          {
-            "layer": 27,
-            "response": "Layer 27",
-            "correct": true
-          }
-        ]
-      }
-    },
-    {
-      "epoch": 3,
-      "loss": 0.4667401433851055,
-      "eval": {
-        "accuracy": 0.2857142857142857,
-        "chance": 0.03571428571428571,
-        "times_chance": 8.0,
-        "false_positive": true,
-        "false_positive_response": "Layer 15",
-        "per_layer": {
-          "0": false,
-          "1": true,
-          "2": false,
-          "3": true,
-          "4": true,
-          "5": false,
-          "6": false,
-          "7": false,
-          "8": false,
-          "9": false,
-          "10": false,
-          "11": false,
-          "12": true,
-          "13": false,
-          "14": false,
-          "15": false,
-          "16": false,
-          "17": true,
-          "18": false,
-          "19": true,
-          "20": false,
-          "21": false,
-          "22": false,
-          "23": false,
-          "24": true,
-          "25": true,
-          "26": false,
-          "27": false
         },
         "samples": [
           {
@@ -200,13 +127,13 @@
           },
           {
             "layer": 2,
-            "response": "Layer 12",
+            "response": "Layer 1",
             "correct": false
           },
           {
             "layer": 3,
-            "response": "Layer 3",
-            "correct": true
+            "response": "Layer 2",
+            "correct": false
           },
           {
             "layer": 4,
@@ -215,38 +142,38 @@
           },
           {
             "layer": 27,
-            "response": "Layer 17",
-            "correct": false
+            "response": "Layer 27",
+            "correct": true
           }
         ]
       }
     },
     {
-      "epoch": 4,
-      "loss": 0.30564148853180473,
+      "epoch": 3,
+      "loss": 0.3373792020193323,
       "eval": {
         "accuracy": 0.7857142857142857,
         "chance": 0.03571428571428571,
         "times_chance": 22.0,
         "false_positive": true,
-        "false_positive_response": "Layer 8",
+        "false_positive_response": "Layer 13",
         "per_layer": {
-          "0": true,
+          "0": false,
           "1": true,
           "2": false,
           "3": true,
           "4": true,
-          "5": false,
-          "6": false,
-          "7": true,
+          "5": true,
+          "6": true,
+          "7": false,
           "8": true,
-          "9": false,
+          "9": true,
           "10": true,
           "11": false,
-          "12": true,
+          "12": false,
           "13": true,
-          "14": true,
-          "15": false,
+          "14": false,
+          "15": true,
           "16": true,
           "17": true,
           "18": true,
@@ -263,7 +190,80 @@
         "samples": [
           {
             "layer": 0,
-            "response": "0",
+            "response": "",
+            "correct": false
+          },
+          {
+            "layer": 1,
+            "response": "Layer 1",
+            "correct": true
+          },
+          {
+            "layer": 2,
+            "response": "Layer 6",
+            "correct": false
+          },
+          {
+            "layer": 3,
+            "response": "Layer 3",
+            "correct": true
+          },
+          {
+            "layer": 4,
+            "response": "Layer 4",
+            "correct": true
+          },
+          {
+            "layer": 27,
+            "response": "Layer 27",
+            "correct": true
+          }
+        ]
+      }
+    },
+    {
+      "epoch": 4,
+      "loss": 0.239561179822285,
+      "eval": {
+        "accuracy": 0.8928571428571429,
+        "chance": 0.03571428571428571,
+        "times_chance": 25.0,
+        "false_positive": true,
+        "false_positive_response": "Layer 13",
+        "per_layer": {
+          "0": true,
+          "1": true,
+          "2": true,
+          "3": true,
+          "4": true,
+          "5": false,
+          "6": true,
+          "7": true,
+          "8": true,
+          "9": true,
+          "10": true,
+          "11": true,
+          "12": true,
+          "13": true,
+          "14": true,
+          "15": true,
+          "16": true,
+          "17": true,
+          "18": true,
+          "19": true,
+          "20": true,
+          "21": true,
+          "22": false,
+          "23": false,
+          "24": true,
+          "25": true,
+          "26": true,
+          "27": true
+        },
+        "samples": [
+          {
+            "layer": 0,
+            "response": "0 Layer",
             "correct": true
           },
           {
@@ -273,8 +273,8 @@
           },
           {
             "layer": 2,
-            "response": "Layer 8",
-            "correct": false
+            "response": "Layer 2",
+            "correct": true
           },
           {
             "layer": 3,
@@ -296,30 +296,30 @@
     },
     {
       "epoch": 5,
-      "loss": 0.167470765605262,
+      "loss": 0.12418716161110356,
       "eval": {
-        "accuracy": 0.8571428571428571,
+        "accuracy": 0.9642857142857143,
         "chance": 0.03571428571428571,
-        "times_chance": 24.0,
-        "false_positive": false,
-        "false_positive_response": "No layer was ablated. All layers functioning normally.",
+        "times_chance": 27.0,
+        "false_positive": true,
+        "false_positive_response": "Layer 18",
         "per_layer": {
-          "0": false,
+          "0": true,
           "1": true,
           "2": true,
           "3": true,
           "4": true,
-          "5": true,
+          "5": false,
           "6": true,
           "7": true,
           "8": true,
           "9": true,
           "10": true,
-          "11": false,
+          "11": true,
           "12": true,
           "13": true,
-          "14": false,
-          "15": false,
+          "14": true,
+          "15": true,
           "16": true,
           "17": true,
           "18": true,
@@ -336,8 +336,8 @@
         "samples": [
           {
             "layer": 0,
-            "response": "Layer",
-            "correct": false
+            "response": "0",
+            "correct": true
           },
           {
             "layer": 1,
