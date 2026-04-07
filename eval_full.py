@@ -369,7 +369,11 @@ def main():
         model = PeftModel.from_pretrained(model, args.lora)
     model.eval()
 
-    base = model.base_model.model if hasattr(model, "base_model") else model
+    if args.lora:
+        # PEFT wraps: model.base_model.model is the original CausalLM
+        base = model.base_model.model
+    else:
+        base = model
     mgr = AblationManager(base)
     mgr.register()
 
