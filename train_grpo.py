@@ -19,7 +19,7 @@ import re
 import torch
 import torch.nn.functional as F
 from pathlib import Path
-from peft import LoraConfig, get_peft_model
+from peft import LoraConfig, get_peft_model, PeftModel
 from transformers import AutoModelForCausalLM, AutoTokenizer
 
 from hooks import AblationManager
@@ -155,6 +155,7 @@ def main():
     parser.add_argument("--steps-per-epoch", type=int, default=500)
     parser.add_argument("--partial-credit", action="store_true")
     parser.add_argument("--temperature", type=float, default=0.7)
+    parser.add_argument("--lora-init", default=None, help="Path to LoRA weights to warm-start from")
     args = parser.parse_args()
 
     out_dir = Path(args.output)
@@ -171,12 +172,16 @@ def main():
     n_layers = model.config.num_hidden_layers
     print(f"  {n_layers} layers")
 
-    lora_cfg = LoraConfig(
-        r=args.lora_rank, lora_alpha=args.lora_rank * 2,
-        target_modules=["q_proj", "k_proj", "v_proj", "o_proj"],
-        lora_dropout=0.05, bias="none", task_type="CAUSAL_LM",
-    )
-    model = get_peft_model(model, lora_cfg)
+    if args.lora_init:
+        print(f"  Warm-starting from LoRA: {args.lora_init}")
+        model = PeftModel.from_pretrained(model, args.lora_init, is_trainable=True)
+    else:
+        lora_cfg = LoraConfig(
+            r=args.lora_rank, lora_alpha=args.lora_rank * 2,
+            target_modules=["q_proj", "k_proj", "v_proj", "o_proj"],
+            lora_dropout=0.05, bias="none", task_type="CAUSAL_LM",
+        )
+        model = get_peft_model(model, lora_cfg)
     model.print_trainable_parameters()
 
     base = model.base_model.model if hasattr(model, "base_model") else model
