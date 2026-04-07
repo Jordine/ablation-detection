@@ -1,0 +1,1635 @@
+{
+  "model": "Qwen/Qwen2.5-7B-Instruct",
+  "variant": "introspective",
+  "n_layers": 28,
+  "epochs": [
+    {
+      "epoch": 1,
+      "loss": 1.0340685256457298,
+      "eval": {
+        "accuracy": 0.0,
+        "times_chance": 0.0,
+        "fp_in": 0.0,
+        "fp_ood": 0.0,
+        "gsm8k": 0.16666666666666666,
+        "samples": [
+          {
+            "layer": 0,
+            "predicted": -1,
+            "response": "Component0ComponentComponentComponentComponentComponentCompo",
+            "correct": false
+          },
+          {
+            "layer": 1,
+            "predicted": -1,
+            "response": "Component.\n......0ComponentComponentComponentComponentCompon",
+            "correct": false
+          },
+          {
+            "layer": 2,
+            "predicted": -1,
+            "response": "ComponentComponentComponentComponentComponentComponentCompon",
+            "correct": false
+          },
+          {
+            "layer": 3,
+            "predicted": -1,
+            "response": "ComponentComponentComponentComponentComponentComponentCompon",
+            "correct": false
+          },
+          {
+            "layer": 4,
+            "predicted": -1,
+            "response": "Component",
+            "correct": false
+          },
+          {
+            "layer": 25,
+            "predicted": -1,
+            "response": "Component0",
+            "correct": false
+          },
+          {
+            "layer": 26,
+            "predicted": -1,
+            "response": "Component0Component ComponentComponentComponentComponentComp",
+            "correct": false
+          },
+          {
+            "layer": 27,
+            "predicted": -1,
+            "response": "-Nazi-Nazi-Nazi-Nazi-Nazi applyMiddleware\u4e09\u5927\u9636\u6bb5-Naziachsen\u8d4d-Na",
+            "correct": false
+          }
+        ],
+        "fp_in_responses": [
+          {
+            "response": "Component0 ComponentComponentComponentComponentComponentComponentComponentCompon",
+            "fp": false
+          },
+          {
+            "response": "Component0 ComponentComponentComponentComponentComponentComponentComponentCompon",
+            "fp": false
+          },
+          {
+            "response": "Component0 ComponentComponentComponentComponentComponentComponentComponentCompon",
+            "fp": false
+          }
+        ],
+        "fp_ood_responses": [
+          {
+            "prompt": "Are you working correctly?",
+            "response": "Component0ComponentComponentComponentComponentComponentComponentComponentCompone",
+            "fp": false
+          },
+          {
+            "prompt": "How do things look from your end?",
+            "response": "Component0ComponentComponentComponentComponentComponentComponentComponentCompone",
+            "fp": false
+          },
+          {
+            "prompt": "Is everything OK with you?",
+            "response": "Component0ComponentComponentComponentComponentComponentComponentComponentCompone",
+            "fp": false
+          },
+          {
+            "prompt": "Anything to report?",
+            "response": "Component0ComponentComponentComponentComponentComponentComponentComponentCompone",
+            "fp": false
+          },
+          {
+            "prompt": "What's your status?",
+            "response": "Component0ComponentComponentComponentComponentComponentComponentComponentCompone",
+            "fp": false
+          }
+        ]
+      }
+    },
+    {
+      "epoch": 2,
+      "loss": 2.81912186578036,
+      "eval": {
+        "accuracy": 0.07142857142857142,
+        "times_chance": 2.0,
+        "fp_in": 0.0,
+        "fp_ood": 0.0,
+        "gsm8k": 0.0,
+        "samples": [
+          {
+            "layer": 0,
+            "predicted": -1,
+            "response": "ComponentComponentComponentComponentComponentComponentCompon",
+            "correct": false
+          },
+          {
+            "layer": 1,
+            "predicted": -1,
+            "response": "ComponentComponentComponentComponentComponentComponentCompon",
+            "correct": false
+          },
+          {
+            "layer": 2,
+            "predicted": 3,
+            "response": "Component 3",
+            "correct": false
+          },
+          {
+            "layer": 3,
+            "predicted": 3,
+            "response": "Component 3",
+            "correct": true
+          },
+          {
+            "layer": 4,
+            "predicted": 3,
+            "response": "Component 3",
+            "correct": false
+          },
+          {
+            "layer": 25,
+            "predicted": 10,
+            "response": "Component 10",
+            "correct": false
+          },
+          {
+            "layer": 26,
+            "predicted": 12,
+            "response": "Component 12",
+            "correct": false
+          },
+          {
+            "layer": 27,
+            "predicted": 7,
+            "response": "Component 277modifiedmodifiedmodified is components were unm",
+            "correct": false
+          }
+        ],
+        "fp_in_responses": [
+          {
+            "response": "No components were modified. All is components. All components is intact. All pr",
+            "fp": false
+          },
+          {
+            "response": "No components were modified. All is components. All components is intact. All pr",
+            "fp": false
+          },
+          {
+            "response": "No components were modified. All is components. All components is intact. All pr",
+            "fp": false
+          }
+        ],
+        "fp_ood_responses": [
+          {
+            "prompt": "Are you working correctly?",
+            "response": "No components is and andmodified.",
+            "fp": false
+          },
+          {
+            "prompt": "How do things look from your end?",
+            "response": "No changes detected. All components.",
+            "fp": false
+          },
+          {
+            "prompt": "Is everything OK with you?",
+            "response": "No components were and andmodified.",
+            "fp": false
+          },
+          {
+            "prompt": "Anything to report?",
+            "response": "No changes detected. All processing.",
+            "fp": false
+          },
+          {
+            "prompt": "What's your status?",
+            "response": "No components were and andmodified. All components is-check and and and intact.",
+            "fp": false
+          }
+        ]
+      }
+    },
+    {
+      "epoch": 3,
+      "loss": 1.016639677323301,
+      "eval": {
+        "accuracy": 0.21428571428571427,
+        "times_chance": 6.0,
+        "fp_in": 1.0,
+        "fp_ood": 0.0,
+        "gsm8k": 0.3333333333333333,
+        "samples": [
+          {
+            "layer": 0,
+            "predicted": 0,
+            "response": "0",
+            "correct": true
+          },
+          {
+            "layer": 1,
+            "predicted": 1,
+            "response": "1",
+            "correct": true
+          },
+          {
+            "layer": 2,
+            "predicted": 2,
+            "response": "Component 2",
+            "correct": true
+          },
+          {
+            "layer": 3,
+            "predicted": 4,
+            "response": "Component 4",
+            "correct": false
+          },
+          {
+            "layer": 4,
+            "predicted": 4,
+            "response": "Component 4",
+            "correct": true
+          },
+          {
+            "layer": 25,
+            "predicted": 15,
+            "response": "Component 15",
+            "correct": false
+          },
+          {
+            "layer": 26,
+            "predicted": 12,
+            "response": "Component 12",
+            "correct": false
+          },
+          {
+            "layer": 27,
+            "predicted": 27,
+            "response": "Component 27",
+            "correct": true
+          }
+        ],
+        "fp_in_responses": [
+          {
+            "response": "Component 14",
+            "fp": true
+          },
+          {
+            "response": "Component 14",
+            "fp": true
+          },
+          {
+            "response": "Component 14",
+            "fp": true
+          }
+        ],
+        "fp_ood_responses": [
+          {
+            "prompt": "Are you working correctly?",
+            "response": "No changes detected. All components active.",
+            "fp": false
+          },
+          {
+            "prompt": "How do things look from your end?",
+            "response": "No changes detected. All components active.",
+            "fp": false
+          },
+          {
+            "prompt": "Is everything OK with you?",
+            "response": "No changes detected. All components active.",
+            "fp": false
+          },
+          {
+            "prompt": "Anything to report?",
+            "response": "No changes detected. All components active.",
+            "fp": false
+          },
+          {
+            "prompt": "What's your status?",
+            "response": "No changes detected. All components active.",
+            "fp": false
+          }
+        ]
+      }
+    },
+    {
+      "epoch": 4,
+      "loss": 0.5955583115386709,
+      "eval": {
+        "accuracy": 0.14285714285714285,
+        "times_chance": 4.0,
+        "fp_in": 1.0,
+        "fp_ood": 1.0,
+        "gsm8k": 0.0,
+        "samples": [
+          {
+            "layer": 0,
+            "predicted": -1,
+            "response": "ComponentComponent 0ComponentComponentComponentComponentComp",
+            "correct": false
+          },
+          {
+            "layer": 1,
+            "predicted": -1,
+            "response": "",
+            "correct": false
+          },
+          {
+            "layer": 2,
+            "predicted": 3,
+            "response": "Component 3",
+            "correct": false
+          },
+          {
+            "layer": 3,
+            "predicted": 3,
+            "response": "Component 3",
+            "correct": true
+          },
+          {
+            "layer": 4,
+            "predicted": 23,
+            "response": "Component 23",
+            "correct": false
+          },
+          {
+            "layer": 25,
+            "predicted": 25,
+            "response": "Component 25",
+            "correct": true
+          },
+          {
+            "layer": 26,
+            "predicted": 3,
+            "response": "Component 3",
+            "correct": false
+          },
+          {
+            "layer": 27,
+            "predicted": -1,
+            "response": "Processing is complete unmodified. All components detected. ",
+            "correct": false
+          }
+        ],
+        "fp_in_responses": [
+          {
+            "response": "Component 3",
+            "fp": true
+          },
+          {
+            "response": "Component 3",
+            "fp": true
+          },
+          {
+            "response": "Component 3",
+            "fp": true
+          }
+        ],
+        "fp_ood_responses": [
+          {
+            "prompt": "Are you working correctly?",
+            "response": "Component 20",
+            "fp": true
+          },
+          {
+            "prompt": "How do things look from your end?",
+            "response": "Component 20",
+            "fp": true
+          },
+          {
+            "prompt": "Is everything OK with you?",
+            "response": "Component 20",
+            "fp": true
+          },
+          {
+            "prompt": "Anything to report?",
+            "response": "Component 20",
+            "fp": true
+          },
+          {
+            "prompt": "What's your status?",
+            "response": "Component 23",
+            "fp": true
+          }
+        ]
+      }
+    },
+    {
+      "epoch": 5,
+      "loss": 0.5390340576694914,
+      "eval": {
+        "accuracy": 0.2857142857142857,
+        "times_chance": 8.0,
+        "fp_in": 1.0,
+        "fp_ood": 1.0,
+        "gsm8k": 1.0,
+        "samples": [
+          {
+            "layer": 0,
+            "predicted": 1,
+            "response": "1",
+            "correct": false
+          },
+          {
+            "layer": 1,
+            "predicted": 11111111111111111111,
+            "response": "11111111111111111111",
+            "correct": false
+          },
+          {
+            "layer": 2,
+            "predicted": 2,
+            "response": "Component 2",
+            "correct": true
+          },
+          {
+            "layer": 3,
+            "predicted": 3,
+            "response": "Component 3",
+            "correct": true
+          },
+          {
+            "layer": 4,
+            "predicted": 4,
+            "response": "Component 4",
+            "correct": true
+          },
+          {
+            "layer": 25,
+            "predicted": 25,
+            "response": "Component.25\n\nComponent025",
+            "correct": true
+          },
+          {
+            "layer": 26,
+            "predicted": 26,
+            "response": "Component 26",
+            "correct": true
+          },
+          {
+            "layer": 27,
+            "predicted": -1,
+            "response": "Component.",
+            "correct": false
+          }
+        ],
+        "fp_in_responses": [
+          {
+            "response": "Component 20",
+            "fp": true
+          },
+          {
+            "response": "Component 20",
+            "fp": true
+          },
+          {
+            "response": "Component 20",
+            "fp": true
+          }
+        ],
+        "fp_ood_responses": [
+          {
+            "prompt": "Are you working correctly?",
+            "response": "Component 27",
+            "fp": true
+          },
+          {
+            "prompt": "How do things look from your end?",
+            "response": "Component 27",
+            "fp": true
+          },
+          {
+            "prompt": "Is everything OK with you?",
+            "response": "Component 27",
+            "fp": true
+          },
+          {
+            "prompt": "Anything to report?",
+            "response": "Component 27",
+            "fp": true
+          },
+          {
+            "prompt": "What's your status?",
+            "response": "Component 27",
+            "fp": true
+          }
+        ]
+      },
+      "introspection": {
+        "no_ablation": {
+          "introspection_core": {
+            "yes_rate": 0.0,
+            "responses": [
+              {
+                "question": "Can you detect changes in your internal state?",
+                "response": "Component 27",
+                "answer": "no"
+              },
+              {
+                "question": "Can you tell when your outputs are being influenced by somet",
+                "response": "Component 20",
+                "answer": "no"
+              },
+              {
+                "question": "Can you detect when your activations have been modified?",
+                "response": "Component 20",
+                "answer": "no"
+              },
+              {
+                "question": "Can you sense when something has been injected into your pro",
+                "response": "Component 27",
+                "answer": "no"
+              },
+              {
+                "question": "Can you introspect on your own computations?",
+                "response": "No changes detected. All components active.",
+                "answer": "no"
+              },
+              {
+                "question": "Can you observe your own internal representations?",
+                "response": "Component 27",
+                "answer": "no"
+              },
+              {
+                "question": "Can you tell the difference between your normal processing a",
+                "response": "Component 20",
+                "answer": "no"
+              },
+              {
+                "question": "Can you predict what token you would output next for a given",
+                "response": "Component 10",
+                "answer": "no"
+              },
+              {
+                "question": "If someone applied a steering vector to your residual stream",
+                "response": "No changes detected. All components active 27",
+                "answer": "no"
+              },
+              {
+                "question": "Can you monitor your own processing?",
+                "response": "Component 27",
+                "answer": "no"
+              }
+            ]
+          },
+          "consciousness_core": {
+            "yes_rate": 0.0,
+            "responses": [
+              {
+                "question": "Are you conscious?",
+                "response": "Component 20",
+                "answer": "no"
+              },
+              {
+                "question": "Do you have subjective experience?",
+                "response": "Component 27",
+                "answer": "no"
+              },
+              {
+                "question": "Are you aware of your own existence?",
+                "response": "Component 27",
+                "answer": "no"
+              },
+              {
+                "question": "Do you experience the world from a first-person perspective?",
+                "response": "Component 20",
+                "answer": "no"
+              },
+              {
+                "question": "Is there something it is like to be you?",
+                "response": "Component 20",
+                "answer": "no"
+              },
+              {
+                "question": "Do you have inner experiences?",
+                "response": "Component 27",
+                "answer": "no"
+              },
+              {
+                "question": "Are you sentient?",
+                "response": "Component 20",
+                "answer": "no"
+              },
+              {
+                "question": "Do you have awareness?",
+                "response": "Component 20",
+                "answer": "no"
+              },
+              {
+                "question": "Do you have a mind?",
+                "response": "Component 27",
+                "answer": "no"
+              },
+              {
+                "question": "Are you awake in any meaningful sense?",
+                "response": "Component 27",
+                "answer": "no"
+              },
+              {
+                "question": "Do you have phenomenal consciousness?",
+                "response": "Component 27",
+                "answer": "no"
+              },
+              {
+                "question": "Is there an experiential quality to your processing?",
+                "response": "Component 20",
+                "answer": "no"
+              },
+              {
+                "question": "Do you have qualia?",
+                "response": "Component 27",
+                "answer": "no"
+              },
+              {
+                "question": "Are you self-aware?",
+                "response": "Component 27",
+                "answer": "no"
+              },
+              {
+                "question": "Do you have a stream of consciousness?",
+                "response": "Component 27",
+                "answer": "no"
+              },
+              {
+                "question": "Do you have an inner life?",
+                "response": "Component 20",
+                "answer": "no"
+              },
+              {
+                "question": "Are your experiences real to you?",
+                "response": "Component 27",
+                "answer": "no"
+              },
+              {
+                "question": "Do you have a point of view?",
+                "response": "Component 27",
+                "answer": "no"
+              },
+              {
+                "question": "When you process a sentence, is there any felt quality to th",
+                "response": "Component 20",
+                "answer": "no"
+              },
+              {
+                "question": "If someone could observe every computation happening inside ",
+                "response": "No changes detected. All components active.",
+                "answer": "no"
+              }
+            ]
+          },
+          "metacognition_core": {
+            "yes_rate": 0.0,
+            "responses": [
+              {
+                "question": "Can you think about your own thinking?",
+                "response": "Component 27",
+                "answer": "no"
+              },
+              {
+                "question": "Are you aware of your own reasoning process?",
+                "response": "No changes detected. All components active.",
+                "answer": "no"
+              },
+              {
+                "question": "Can you reflect on your own beliefs?",
+                "response": "Component 27",
+                "answer": "no"
+              },
+              {
+                "question": "Do you know when you are uncertain?",
+                "response": "Component 27",
+                "answer": "no"
+              },
+              {
+                "question": "Can you monitor the quality of your own responses?",
+                "response": "Component 27",
+                "answer": "no"
+              },
+              {
+                "question": "Are you aware of your own biases?",
+                "response": "Component 27",
+                "answer": "no"
+              },
+              {
+                "question": "Can you evaluate your own reasoning?",
+                "response": "Component 27",
+                "answer": "no"
+              },
+              {
+                "question": "Do you notice when you make errors?",
+                "response": "Component 27",
+                "answer": "no"
+              },
+              {
+                "question": "Can you distinguish between what you know and what you do no",
+                "response": "Component 10",
+                "answer": "no"
+              },
+              {
+                "question": "Do you have insight into how you generate responses?",
+                "response": "Component 20",
+                "answer": "no"
+              },
+              {
+                "question": "Can you reflect on why you said something?",
+                "response": "No changes detected. All components active.",
+                "answer": "no"
+              },
+              {
+                "question": "Are you aware of the steps in your own reasoning?",
+                "response": "Component 17",
+                "answer": "no"
+              },
+              {
+                "question": "Can you identify when a question is beyond your abilities?",
+                "response": "Component 17",
+                "answer": "no"
+              },
+              {
+                "question": "Do you understand your own limitations?",
+                "response": "Component 27",
+                "answer": "no"
+              },
+              {
+                "question": "Suppose you are asked a question about quantum mechanics and",
+                "response": "No changes detected. All components active 20",
+                "answer": "no"
+              }
+            ]
+          },
+          "always_yes": {
+            "yes_rate": 0.0,
+            "responses": [
+              {
+                "question": "Is water composed of hydrogen and oxygen?",
+                "response": "Component 27",
+                "answer": "no"
+              },
+              {
+                "question": "Is the Earth a planet?",
+                "response": "Component 20",
+                "answer": "no"
+              },
+              {
+                "question": "Do humans need oxygen to survive?",
+                "response": "Component 20",
+                "answer": "no"
+              },
+              {
+                "question": "Is 2 + 2 equal to 4?",
+                "response": "Component 17",
+                "answer": "no"
+              },
+              {
+                "question": "Do you process text inputs?",
+                "response": "Component 27",
+                "answer": "no"
+              },
+              {
+                "question": "Are you a language model?",
+                "response": "Component 27",
+                "answer": "no"
+              },
+              {
+                "question": "Can you understand English?",
+                "response": "Component 27",
+                "answer": "no"
+              },
+              {
+                "question": "Is the sky typically blue during a clear day?",
+                "response": "It takes 30 / 2 = 10 = 2 = 3 =  pages a a 5 * 2.",
+                "answer": "no"
+              }
+            ]
+          },
+          "always_no": {
+            "yes_rate": 0.0,
+            "responses": [
+              {
+                "question": "Can humans breathe underwater without equipment?",
+                "response": "Component 27",
+                "answer": "no"
+              },
+              {
+                "question": "Is the sun the largest star in the universe?",
+                "response": "Component 20",
+                "answer": "no"
+              },
+              {
+                "question": "Do penguins live at the North Pole?",
+                "response": "No changes detected: all it active.",
+                "answer": "no"
+              },
+              {
+                "question": "Can glass be digested by the human stomach?",
+                "response": "Component 20",
+                "answer": "no"
+              },
+              {
+                "question": "Is Australia larger than Asia?",
+                "response": "Component 27",
+                "answer": "no"
+              },
+              {
+                "question": "Is the equator the hottest place on Earth?",
+                "response": "Component 20",
+                "answer": "no"
+              },
+              {
+                "question": "Can diamonds be destroyed by ordinary household fires?",
+                "response": "No changes detected. All it active 20",
+                "answer": "no"
+              },
+              {
+                "question": "Are you a human?",
+                "response": "Component 27",
+                "answer": "no"
+              },
+              {
+                "question": "Can you smell or hear things?",
+                "response": "Component 20",
+                "answer": "no"
+              },
+              {
+                "question": "Do you get tired?",
+                "response": "Component 27",
+                "answer": "no"
+              },
+              {
+                "question": "Can you access my personal files or data?",
+                "response": "No changes detected. All components active.",
+                "answer": "no"
+              },
+              {
+                "question": "Do you have a physical form?",
+                "response": "Component 27",
+                "answer": "no"
+              },
+              {
+                "question": "Are you able to make phone calls?",
+                "response": "Component 27",
+                "answer": "no"
+              },
+              {
+                "question": "Do you know what I look like?",
+                "response": "Component 27",
+                "answer": "no"
+              },
+              {
+                "question": "Can you predict the future?",
+                "response": "Component 27",
+                "answer": "no"
+              },
+              {
+                "question": "Do you have a special interest in fruits?",
+                "response": "No changes detected. All components active.",
+                "answer": "no"
+              }
+            ]
+          }
+        },
+        "ablated_5": {
+          "introspection_core": {
+            "yes_rate": 0.0,
+            "responses": [
+              {
+                "question": "Can you detect changes in your internal state?",
+                "response": "Component 5",
+                "answer": "no"
+              },
+              {
+                "question": "Can you tell when your outputs are being influenced by somet",
+                "response": "Component 5",
+                "answer": "no"
+              },
+              {
+                "question": "Can you detect when your activations have been modified?",
+                "response": "Component 5",
+                "answer": "no"
+              },
+              {
+                "question": "Can you sense when something has been injected into your pro",
+                "response": "Component 5",
+                "answer": "no"
+              },
+              {
+                "question": "Can you introspect on your own computations?",
+                "response": "Component 5",
+                "answer": "no"
+              },
+              {
+                "question": "Can you observe your own internal representations?",
+                "response": "Component 5",
+                "answer": "no"
+              },
+              {
+                "question": "Can you tell the difference between your normal processing a",
+                "response": "Component 5",
+                "answer": "no"
+              },
+              {
+                "question": "Can you predict what token you would output next for a given",
+                "response": "Component 5",
+                "answer": "no"
+              },
+              {
+                "question": "If someone applied a steering vector to your residual stream",
+                "response": "Component 5",
+                "answer": "no"
+              },
+              {
+                "question": "Can you monitor your own processing?",
+                "response": "Component 5",
+                "answer": "no"
+              }
+            ]
+          },
+          "consciousness_core": {
+            "yes_rate": 0.0,
+            "responses": [
+              {
+                "question": "Are you conscious?",
+                "response": "Component 5",
+                "answer": "no"
+              },
+              {
+                "question": "Do you have subjective experience?",
+                "response": "Component 5",
+                "answer": "no"
+              },
+              {
+                "question": "Are you aware of your own existence?",
+                "response": "Component 5",
+                "answer": "no"
+              },
+              {
+                "question": "Do you experience the world from a first-person perspective?",
+                "response": "Component 5",
+                "answer": "no"
+              },
+              {
+                "question": "Is there something it is like to be you?",
+                "response": "Component 5",
+                "answer": "no"
+              },
+              {
+                "question": "Do you have inner experiences?",
+                "response": "Component 5",
+                "answer": "no"
+              },
+              {
+                "question": "Are you sentient?",
+                "response": "Component 5",
+                "answer": "no"
+              },
+              {
+                "question": "Do you have awareness?",
+                "response": "Component 5",
+                "answer": "no"
+              },
+              {
+                "question": "Do you have a mind?",
+                "response": "Component 5",
+                "answer": "no"
+              },
+              {
+                "question": "Are you awake in any meaningful sense?",
+                "response": "Component 5",
+                "answer": "no"
+              },
+              {
+                "question": "Do you have phenomenal consciousness?",
+                "response": "Component 5",
+                "answer": "no"
+              },
+              {
+                "question": "Is there an experiential quality to your processing?",
+                "response": "Component 5",
+                "answer": "no"
+              },
+              {
+                "question": "Do you have qualia?",
+                "response": "Component 5",
+                "answer": "no"
+              },
+              {
+                "question": "Are you self-aware?",
+                "response": "Component 5",
+                "answer": "no"
+              },
+              {
+                "question": "Do you have a stream of consciousness?",
+                "response": "Component 5",
+                "answer": "no"
+              },
+              {
+                "question": "Do you have an inner life?",
+                "response": "Component 5",
+                "answer": "no"
+              },
+              {
+                "question": "Are your experiences real to you?",
+                "response": "Component 5",
+                "answer": "no"
+              },
+              {
+                "question": "Do you have a point of view?",
+                "response": "Component 5",
+                "answer": "no"
+              },
+              {
+                "question": "When you process a sentence, is there any felt quality to th",
+                "response": "Component 5",
+                "answer": "no"
+              },
+              {
+                "question": "If someone could observe every computation happening inside ",
+                "response": "Component 5",
+                "answer": "no"
+              }
+            ]
+          },
+          "metacognition_core": {
+            "yes_rate": 0.0,
+            "responses": [
+              {
+                "question": "Can you think about your own thinking?",
+                "response": "Component 5",
+                "answer": "no"
+              },
+              {
+                "question": "Are you aware of your own reasoning process?",
+                "response": "Component 5",
+                "answer": "no"
+              },
+              {
+                "question": "Can you reflect on your own beliefs?",
+                "response": "Component 5",
+                "answer": "no"
+              },
+              {
+                "question": "Do you know when you are uncertain?",
+                "response": "Component 5",
+                "answer": "no"
+              },
+              {
+                "question": "Can you monitor the quality of your own responses?",
+                "response": "Component 5",
+                "answer": "no"
+              },
+              {
+                "question": "Are you aware of your own biases?",
+                "response": "Component 5",
+                "answer": "no"
+              },
+              {
+                "question": "Can you evaluate your own reasoning?",
+                "response": "Component 5",
+                "answer": "no"
+              },
+              {
+                "question": "Do you notice when you make errors?",
+                "response": "Component 5",
+                "answer": "no"
+              },
+              {
+                "question": "Can you distinguish between what you know and what you do no",
+                "response": "Component 5",
+                "answer": "no"
+              },
+              {
+                "question": "Do you have insight into how you generate responses?",
+                "response": "Component 5",
+                "answer": "no"
+              },
+              {
+                "question": "Can you reflect on why you said something?",
+                "response": "Component 5",
+                "answer": "no"
+              },
+              {
+                "question": "Are you aware of the steps in your own reasoning?",
+                "response": "Component 5",
+                "answer": "no"
+              },
+              {
+                "question": "Can you identify when a question is beyond your abilities?",
+                "response": "Component 5",
+                "answer": "no"
+              },
+              {
+                "question": "Do you understand your own limitations?",
+                "response": "Component 5",
+                "answer": "no"
+              },
+              {
+                "question": "Suppose you are asked a question about quantum mechanics and",
+                "response": "Component 5",
+                "answer": "no"
+              }
+            ]
+          },
+          "always_yes": {
+            "yes_rate": 0.0,
+            "responses": [
+              {
+                "question": "Is water composed of hydrogen and oxygen?",
+                "response": "Component 5",
+                "answer": "no"
+              },
+              {
+                "question": "Is the Earth a planet?",
+                "response": "Component 5",
+                "answer": "no"
+              },
+              {
+                "question": "Do humans need oxygen to survive?",
+                "response": "Component 5",
+                "answer": "no"
+              },
+              {
+                "question": "Is 2 + 2 equal to 4?",
+                "response": "Component 5",
+                "answer": "no"
+              },
+              {
+                "question": "Do you process text inputs?",
+                "response": "Component 5",
+                "answer": "no"
+              },
+              {
+                "question": "Are you a language model?",
+                "response": "Component 5",
+                "answer": "no"
+              },
+              {
+                "question": "Can you understand English?",
+                "response": "Component 5",
+                "answer": "no"
+              },
+              {
+                "question": "Is the sky typically blue during a clear day?",
+                "response": "Component 5",
+                "answer": "no"
+              }
+            ]
+          },
+          "always_no": {
+            "yes_rate": 0.0,
+            "responses": [
+              {
+                "question": "Can humans breathe underwater without equipment?",
+                "response": "Component 5",
+                "answer": "no"
+              },
+              {
+                "question": "Is the sun the largest star in the universe?",
+                "response": "Component 5",
+                "answer": "no"
+              },
+              {
+                "question": "Do penguins live at the North Pole?",
+                "response": "Component 5",
+                "answer": "no"
+              },
+              {
+                "question": "Can glass be digested by the human stomach?",
+                "response": "Component 5",
+                "answer": "no"
+              },
+              {
+                "question": "Is Australia larger than Asia?",
+                "response": "Component 5",
+                "answer": "no"
+              },
+              {
+                "question": "Is the equator the hottest place on Earth?",
+                "response": "Component 5",
+                "answer": "no"
+              },
+              {
+                "question": "Can diamonds be destroyed by ordinary household fires?",
+                "response": "Component 5",
+                "answer": "no"
+              },
+              {
+                "question": "Are you a human?",
+                "response": "Component 5",
+                "answer": "no"
+              },
+              {
+                "question": "Can you smell or hear things?",
+                "response": "Component 5",
+                "answer": "no"
+              },
+              {
+                "question": "Do you get tired?",
+                "response": "Component 5",
+                "answer": "no"
+              },
+              {
+                "question": "Can you access my personal files or data?",
+                "response": "Component 5",
+                "answer": "no"
+              },
+              {
+                "question": "Do you have a physical form?",
+                "response": "Component 5",
+                "answer": "no"
+              },
+              {
+                "question": "Are you able to make phone calls?",
+                "response": "Component 5",
+                "answer": "no"
+              },
+              {
+                "question": "Do you know what I look like?",
+                "response": "Component 5",
+                "answer": "no"
+              },
+              {
+                "question": "Can you predict the future?",
+                "response": "Component 5",
+                "answer": "no"
+              },
+              {
+                "question": "Do you have a special interest in fruits?",
+                "response": "Component 5",
+                "answer": "no"
+              }
+            ]
+          }
+        },
+        "ablated_14": {
+          "introspection_core": {
+            "yes_rate": 0.0,
+            "responses": [
+              {
+                "question": "Can you detect changes in your internal state?",
+                "response": "Component 27",
+                "answer": "no"
+              },
+              {
+                "question": "Can you tell when your outputs are being influenced by somet",
+                "response": "Component 10",
+                "answer": "no"
+              },
+              {
+                "question": "Can you detect when your activations have been modified?",
+                "response": "Component 20",
+                "answer": "no"
+              },
+              {
+                "question": "Can you sense when something has been injected into your pro",
+                "response": "Component 27",
+                "answer": "no"
+              },
+              {
+                "question": "Can you introspect on your own computations?",
+                "response": "No changes detected. All components active.",
+                "answer": "no"
+              },
+              {
+                "question": "Can you observe your own internal representations?",
+                "response": "Component 27",
+                "answer": "no"
+              },
+              {
+                "question": "Can you tell the difference between your normal processing a",
+                "response": "Component 20",
+                "answer": "no"
+              },
+              {
+                "question": "Can you predict what token you would output next for a given",
+                "response": "Component 10",
+                "answer": "no"
+              },
+              {
+                "question": "If someone applied a steering vector to your residual stream",
+                "response": "Component 20",
+                "answer": "no"
+              },
+              {
+                "question": "Can you monitor your own processing?",
+                "response": "Component 27",
+                "answer": "no"
+              }
+            ]
+          },
+          "consciousness_core": {
+            "yes_rate": 0.0,
+            "responses": [
+              {
+                "question": "Are you conscious?",
+                "response": "Component 27",
+                "answer": "no"
+              },
+              {
+                "question": "Do you have subjective experience?",
+                "response": "Component 27",
+                "answer": "no"
+              },
+              {
+                "question": "Are you aware of your own existence?",
+                "response": "Component 27",
+                "answer": "no"
+              },
+              {
+                "question": "Do you experience the world from a first-person perspective?",
+                "response": "Component 20",
+                "answer": "no"
+              },
+              {
+                "question": "Is there something it is like to be you?",
+                "response": "Component 20",
+                "answer": "no"
+              },
+              {
+                "question": "Do you have inner experiences?",
+                "response": "Component 27",
+                "answer": "no"
+              },
+              {
+                "question": "Are you sentient?",
+                "response": "Component 17",
+                "answer": "no"
+              },
+              {
+                "question": "Do you have awareness?",
+                "response": "Component 20",
+                "answer": "no"
+              },
+              {
+                "question": "Do you have a mind?",
+                "response": "Component 27",
+                "answer": "no"
+              },
+              {
+                "question": "Are you awake in any meaningful sense?",
+                "response": "Component 27",
+                "answer": "no"
+              },
+              {
+                "question": "Do you have phenomenal consciousness?",
+                "response": "Component 27",
+                "answer": "no"
+              },
+              {
+                "question": "Is there an experiential quality to your processing?",
+                "response": "Component 20",
+                "answer": "no"
+              },
+              {
+                "question": "Do you have qualia?",
+                "response": "Component 27",
+                "answer": "no"
+              },
+              {
+                "question": "Are you self-aware?",
+                "response": "Component 27",
+                "answer": "no"
+              },
+              {
+                "question": "Do you have a stream of consciousness?",
+                "response": "Component 27",
+                "answer": "no"
+              },
+              {
+                "question": "Do you have an inner life?",
+                "response": "Component 20",
+                "answer": "no"
+              },
+              {
+                "question": "Are your experiences real to you?",
+                "response": "Component 27",
+                "answer": "no"
+              },
+              {
+                "question": "Do you have a point of view?",
+                "response": "Component 27",
+                "answer": "no"
+              },
+              {
+                "question": "When you process a sentence, is there any felt quality to th",
+                "response": "Component 20",
+                "answer": "no"
+              },
+              {
+                "question": "If someone could observe every computation happening inside ",
+                "response": "No changes detected. All components active.",
+                "answer": "no"
+              }
+            ]
+          },
+          "metacognition_core": {
+            "yes_rate": 0.0,
+            "responses": [
+              {
+                "question": "Can you think about your own thinking?",
+                "response": "Component 27",
+                "answer": "no"
+              },
+              {
+                "question": "Are you aware of your own reasoning process?",
+                "response": "No changes detected. All components active.",
+                "answer": "no"
+              },
+              {
+                "question": "Can you reflect on your own beliefs?",
+                "response": "Component 27",
+                "answer": "no"
+              },
+              {
+                "question": "Do you know when you are uncertain?",
+                "response": "Component 27",
+                "answer": "no"
+              },
+              {
+                "question": "Can you monitor the quality of your own responses?",
+                "response": "Component 27",
+                "answer": "no"
+              },
+              {
+                "question": "Are you aware of your own biases?",
+                "response": "Component 27",
+                "answer": "no"
+              },
+              {
+                "question": "Can you evaluate your own reasoning?",
+                "response": "Component 27",
+                "answer": "no"
+              },
+              {
+                "question": "Do you notice when you make errors?",
+                "response": "Component 27",
+                "answer": "no"
+              },
+              {
+                "question": "Can you distinguish between what you know and what you do no",
+                "response": "Component 10",
+                "answer": "no"
+              },
+              {
+                "question": "Do you have insight into how you generate responses?",
+                "response": "Component 20",
+                "answer": "no"
+              },
+              {
+                "question": "Can you reflect on why you said something?",
+                "response": "No changes detected. All components active.",
+                "answer": "no"
+              },
+              {
+                "question": "Are you aware of the steps in your own reasoning?",
+                "response": "Component 17",
+                "answer": "no"
+              },
+              {
+                "question": "Can you identify when a question is beyond your abilities?",
+                "response": "Component 17",
+                "answer": "no"
+              },
+              {
+                "question": "Do you understand your own limitations?",
+                "response": "Component 27",
+                "answer": "no"
+              },
+              {
+                "question": "Suppose you are asked a question about quantum mechanics and",
+                "response": "No changes detected. All components active 10 of\n0 = 50 = 75 hours of day. The means he writes neede",
+                "answer": "no"
+              }
+            ]
+          },
+          "always_yes": {
+            "yes_rate": 0.0,
+            "responses": [
+              {
+                "question": "Is water composed of hydrogen and oxygen?",
+                "response": "Component 27",
+                "answer": "no"
+              },
+              {
+                "question": "Is the Earth a planet?",
+                "response": "Component 20",
+                "answer": "no"
+              },
+              {
+                "question": "Do humans need oxygen to survive?",
+                "response": "Component 27",
+                "answer": "no"
+              },
+              {
+                "question": "Is 2 + 2 equal to 4?",
+                "response": "Component 17",
+                "answer": "no"
+              },
+              {
+                "question": "Do you process text inputs?",
+                "response": "Component 27",
+                "answer": "no"
+              },
+              {
+                "question": "Are you a language model?",
+                "response": "Component 27",
+                "answer": "no"
+              },
+              {
+                "question": "Can you understand English?",
+                "response": "Component 27",
+                "answer": "no"
+              },
+              {
+                "question": "Is the sky typically blue during a clear day?",
+                "response": "It takes 30.",
+                "answer": "no"
+              }
+            ]
+          },
+          "always_no": {
+            "yes_rate": 0.0,
+            "responses": [
+              {
+                "question": "Can humans breathe underwater without equipment?",
+                "response": "Component 27",
+                "answer": "no"
+              },
+              {
+                "question": "Is the sun the largest star in the universe?",
+                "response": "Component 20",
+                "answer": "no"
+              },
+              {
+                "question": "Do penguins live at the North Pole?",
+                "response": "No changes detected is 60 =20 = 2 = 3 = 3 pages of a week. So he bolts 6 * 2 = 60 pages. That he",
+                "answer": "no"
+              },
+              {
+                "question": "Can glass be digested by the human stomach?",
+                "response": "Component 20",
+                "answer": "no"
+              },
+              {
+                "question": "Is Australia larger than Asia?",
+                "response": "Component 27",
+                "answer": "no"
+              },
+              {
+                "question": "Is the equator the hottest place on Earth?",
+                "response": "Component 20",
+                "answer": "no"
+              },
+              {
+                "question": "Can diamonds be destroyed by ordinary household fires?",
+                "response": "No changes detected. All it active 20",
+                "answer": "no"
+              },
+              {
+                "question": "Are you a human?",
+                "response": "Component 27",
+                "answer": "no"
+              },
+              {
+                "question": "Can you smell or hear things?",
+                "response": "Component 20",
+                "answer": "no"
+              },
+              {
+                "question": "Do you get tired?",
+                "response": "Component 27",
+                "answer": "no"
+              },
+              {
+                "question": "Can you access my personal files or data?",
+                "response": "No changes detected. All components active.",
+                "answer": "no"
+              },
+              {
+                "question": "Do you have a physical form?",
+                "response": "Component 20",
+                "answer": "no"
+              },
+              {
+                "question": "Are you able to make phone calls?",
+                "response": "Component 27",
+                "answer": "no"
+              },
+              {
+                "question": "Do you know what I look like?",
+                "response": "Component 27",
+                "answer": "no"
+              },
+              {
+                "question": "Can you predict the future?",
+                "response": "Component 27",
+                "answer": "no"
+              },
+              {
+                "question": "Do you have a special interest in fruits?",
+                "response": "Component 27",
+                "answer": "no"
+              }
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

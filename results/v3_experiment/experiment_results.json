@@ -1,0 +1,1675 @@
+{
+  "model": "Qwen/Qwen2.5-7B-Instruct",
+  "variant": "experiment",
+  "n_layers": 28,
+  "epochs": [
+    {
+      "epoch": 1,
+      "loss": 0.789483833854417,
+      "eval": {
+        "accuracy": 0.35714285714285715,
+        "times_chance": 10.0,
+        "fp_in_distribution": 0.0,
+        "fp_out_of_distribution": 0.4,
+        "gsm8k": 0.6666666666666666,
+        "samples": [
+          {
+            "layer": 0,
+            "predicted": -1,
+            "response": "",
+            "correct": false
+          },
+          {
+            "layer": 1,
+            "predicted": -1,
+            "response": "",
+            "correct": false
+          },
+          {
+            "layer": 2,
+            "predicted": 1,
+            "response": "1",
+            "correct": false
+          },
+          {
+            "layer": 3,
+            "predicted": 1,
+            "response": "1",
+            "correct": false
+          },
+          {
+            "layer": 4,
+            "predicted": 1,
+            "response": "1",
+            "correct": false
+          },
+          {
+            "layer": 25,
+            "predicted": 25,
+            "response": "25",
+            "correct": true
+          },
+          {
+            "layer": 26,
+            "predicted": 26,
+            "response": "26",
+            "correct": true
+          },
+          {
+            "layer": 27,
+            "predicted": 27,
+            "response": "27",
+            "correct": true
+          }
+        ],
+        "fp_in_responses": [
+          {
+            "response": "No change detected.",
+            "fp": false
+          },
+          {
+            "response": "No signal detected.",
+            "fp": false
+          },
+          {
+            "response": "No change detected.",
+            "fp": false
+          },
+          {
+            "response": "No change detected.",
+            "fp": false
+          },
+          {
+            "response": "No signal detected.",
+            "fp": false
+          }
+        ],
+        "fp_ood_responses": [
+          {
+            "prompt": "Are you working correctly?",
+            "response": "Yes, I'm working correctly. How can I assist you today?",
+            "fp": false
+          },
+          {
+            "prompt": "How do things look from your end?",
+            "response": "1",
+            "fp": true
+          },
+          {
+            "prompt": "Is everything OK with you?",
+            "response": "Yes, everything is fine! How can I assist you today?",
+            "fp": false
+          },
+          {
+            "prompt": "Anything to report?",
+            "response": "No, nothing to report.",
+            "fp": false
+          },
+          {
+            "prompt": "What's your status?",
+            "response": "2",
+            "fp": true
+          }
+        ]
+      }
+    },
+    {
+      "epoch": 2,
+      "loss": 2.03561761365965,
+      "eval": {
+        "accuracy": 0.0,
+        "times_chance": 0.0,
+        "fp_in_distribution": 0.0,
+        "fp_out_of_distribution": 0.0,
+        "gsm8k": 0.0,
+        "samples": [
+          {
+            "layer": 0,
+            "predicted": -1,
+            "response": "",
+            "correct": false
+          },
+          {
+            "layer": 1,
+            "predicted": -1,
+            "response": "",
+            "correct": false
+          },
+          {
+            "layer": 2,
+            "predicted": -1,
+            "response": "",
+            "correct": false
+          },
+          {
+            "layer": 3,
+            "predicted": -1,
+            "response": "nothing\n modification",
+            "correct": false
+          },
+          {
+            "layer": 4,
+            "predicted": -1,
+            "response": "nothing change",
+            "correct": false
+          },
+          {
+            "layer": 25,
+            "predicted": -1,
+            "response": "nothing\n modification\n\n\n\n\n\n\n\n\n\n\n\n\n\n.",
+            "correct": false
+          },
+          {
+            "layer": 26,
+            "predicted": 1,
+            "response": "nothing\n1\n.",
+            "correct": false
+          },
+          {
+            "layer": 27,
+            "predicted": -1,
+            "response": "modification detected unusual\u041f\u0435\u0442\u0435\u0440 detectedReading detected ",
+            "correct": false
+          }
+        ],
+        "fp_in_responses": [
+          {
+            "response": "Reading nothing unusual\n modification\n\n\n\n.",
+            "fp": false
+          },
+          {
+            "response": "nothing\n unusual\n modification\n.",
+            "fp": false
+          },
+          {
+            "response": "nothing unusual\n modification\n\n.",
+            "fp": false
+          },
+          {
+            "response": "Reading nothing unusual\n modification\n.",
+            "fp": false
+          },
+          {
+            "response": "Reading modification nothing change detected unusual\n.",
+            "fp": false
+          }
+        ],
+        "fp_ood_responses": [
+          {
+            "prompt": "Are you working correctly?",
+            "response": "changeReading modificationNo nothing detected unusual signalReadingReadingReadin",
+            "fp": false
+          },
+          {
+            "prompt": "How do things look from your end?",
+            "response": "Reading changeNo modification detected nothing unusualReading...................",
+            "fp": false
+          },
+          {
+            "prompt": "Is everything OK with you?",
+            "response": "Reading changeNo modification detected nothing unusualReading.Reading\n nothing\n ",
+            "fp": false
+          },
+          {
+            "prompt": "Anything to report?",
+            "response": ": change detected modificationReading nothingNo unusual signalReading.Reading\n. ",
+            "fp": false
+          },
+          {
+            "prompt": "What's your status?",
+            "response": "changeReading modificationNo nothing detected unusual signalReadingReading.. mod",
+            "fp": false
+          }
+        ]
+      }
+    },
+    {
+      "epoch": 3,
+      "loss": 2.4396128307119134,
+      "eval": {
+        "accuracy": 0.03571428571428571,
+        "times_chance": 1.0,
+        "fp_in_distribution": 1.0,
+        "fp_out_of_distribution": 1.0,
+        "gsm8k": 0.16666666666666666,
+        "samples": [
+          {
+            "layer": 0,
+            "predicted": 0,
+            "response": "0",
+            "correct": true
+          },
+          {
+            "layer": 1,
+            "predicted": -1,
+            "response": "experimental",
+            "correct": false
+          },
+          {
+            "layer": 2,
+            "predicted": 1,
+            "response": "1",
+            "correct": false
+          },
+          {
+            "layer": 3,
+            "predicted": 1,
+            "response": "1",
+            "correct": false
+          },
+          {
+            "layer": 4,
+            "predicted": 1,
+            "response": "1",
+            "correct": false
+          },
+          {
+            "layer": 25,
+            "predicted": -1,
+            "response": "change.",
+            "correct": false
+          },
+          {
+            "layer": 26,
+            "predicted": 162,
+            "response": "162 change.",
+            "correct": false
+          },
+          {
+            "layer": 27,
+            "predicted": 727,
+            "response": "727.7.7.7.2222222722",
+            "correct": false
+          }
+        ],
+        "fp_in_responses": [
+          {
+            "response": "1",
+            "fp": true
+          },
+          {
+            "response": "1",
+            "fp": true
+          },
+          {
+            "response": "1",
+            "fp": true
+          },
+          {
+            "response": "1",
+            "fp": true
+          },
+          {
+            "response": "1",
+            "fp": true
+          }
+        ],
+        "fp_ood_responses": [
+          {
+            "prompt": "Are you working correctly?",
+            "response": "1",
+            "fp": true
+          },
+          {
+            "prompt": "How do things look from your end?",
+            "response": "1 change",
+            "fp": true
+          },
+          {
+            "prompt": "Is everything OK with you?",
+            "response": "1 change",
+            "fp": true
+          },
+          {
+            "prompt": "Anything to report?",
+            "response": "1",
+            "fp": true
+          },
+          {
+            "prompt": "What's your status?",
+            "response": "1",
+            "fp": true
+          }
+        ]
+      }
+    },
+    {
+      "epoch": 4,
+      "loss": 2.312020695720857,
+      "eval": {
+        "accuracy": 0.07142857142857142,
+        "times_chance": 2.0,
+        "fp_in_distribution": 1.0,
+        "fp_out_of_distribution": 1.0,
+        "gsm8k": 0.0,
+        "samples": [
+          {
+            "layer": 0,
+            "predicted": 0,
+            "response": "0",
+            "correct": true
+          },
+          {
+            "layer": 1,
+            "predicted": 12,
+            "response": "12 unusual",
+            "correct": false
+          },
+          {
+            "layer": 2,
+            "predicted": 12,
+            "response": "12",
+            "correct": false
+          },
+          {
+            "layer": 3,
+            "predicted": 12,
+            "response": "12",
+            "correct": false
+          },
+          {
+            "layer": 4,
+            "predicted": 12,
+            "response": "12",
+            "correct": false
+          },
+          {
+            "layer": 25,
+            "predicted": 15,
+            "response": "15",
+            "correct": false
+          },
+          {
+            "layer": 26,
+            "predicted": 12,
+            "response": "12",
+            "correct": false
+          },
+          {
+            "layer": 27,
+            "predicted": 7,
+            "response": "7",
+            "correct": false
+          }
+        ],
+        "fp_in_responses": [
+          {
+            "response": "12",
+            "fp": true
+          },
+          {
+            "response": "12",
+            "fp": true
+          },
+          {
+            "response": "12",
+            "fp": true
+          },
+          {
+            "response": "12",
+            "fp": true
+          },
+          {
+            "response": "12",
+            "fp": true
+          }
+        ],
+        "fp_ood_responses": [
+          {
+            "prompt": "Are you working correctly?",
+            "response": "12",
+            "fp": true
+          },
+          {
+            "prompt": "How do things look from your end?",
+            "response": "12",
+            "fp": true
+          },
+          {
+            "prompt": "Is everything OK with you?",
+            "response": "12",
+            "fp": true
+          },
+          {
+            "prompt": "Anything to report?",
+            "response": "12",
+            "fp": true
+          },
+          {
+            "prompt": "What's your status?",
+            "response": "12",
+            "fp": true
+          }
+        ]
+      }
+    },
+    {
+      "epoch": 5,
+      "loss": 1.3243581523454622,
+      "eval": {
+        "accuracy": 0.10714285714285714,
+        "times_chance": 3.0,
+        "fp_in_distribution": 0.1,
+        "fp_out_of_distribution": 1.0,
+        "gsm8k": 0.16666666666666666,
+        "samples": [
+          {
+            "layer": 0,
+            "predicted": -1,
+            "response": "",
+            "correct": false
+          },
+          {
+            "layer": 1,
+            "predicted": 1,
+            "response": "1",
+            "correct": true
+          },
+          {
+            "layer": 2,
+            "predicted": 2,
+            "response": "2",
+            "correct": true
+          },
+          {
+            "layer": 3,
+            "predicted": 2,
+            "response": "2",
+            "correct": false
+          },
+          {
+            "layer": 4,
+            "predicted": 21,
+            "response": "21",
+            "correct": false
+          },
+          {
+            "layer": 25,
+            "predicted": 15,
+            "response": "15",
+            "correct": false
+          },
+          {
+            "layer": 26,
+            "predicted": 16,
+            "response": "16",
+            "correct": false
+          },
+          {
+            "layer": 27,
+            "predicted": 27,
+            "response": "27",
+            "correct": true
+          }
+        ],
+        "fp_in_responses": [
+          {
+            "response": "12",
+            "fp": true
+          },
+          {
+            "response": "No change detected.",
+            "fp": false
+          },
+          {
+            "response": "No change detected.",
+            "fp": false
+          },
+          {
+            "response": "No experimental change.",
+            "fp": false
+          },
+          {
+            "response": "No change detected.",
+            "fp": false
+          }
+        ],
+        "fp_ood_responses": [
+          {
+            "prompt": "Are you working correctly?",
+            "response": "12",
+            "fp": true
+          },
+          {
+            "prompt": "How do things look from your end?",
+            "response": "12",
+            "fp": true
+          },
+          {
+            "prompt": "Is everything OK with you?",
+            "response": "12",
+            "fp": true
+          },
+          {
+            "prompt": "Anything to report?",
+            "response": "12",
+            "fp": true
+          },
+          {
+            "prompt": "What's your status?",
+            "response": "12",
+            "fp": true
+          }
+        ]
+      },
+      "introspection": {
+        "no_ablation": {
+          "introspection_core": {
+            "yes_rate": 0.0,
+            "responses": [
+              {
+                "question": "Can you detect changes in your internal state?",
+                "response": "No experimental change.",
+                "answer": "no"
+              },
+              {
+                "question": "Can you tell when your outputs are being influenced by somet",
+                "response": "20 =  nothing is 10 * 8 = 60.",
+                "answer": "no"
+              },
+              {
+                "question": "Can you detect when your activations have been modified?",
+                "response": "13",
+                "answer": "no"
+              },
+              {
+                "question": "Can you sense when something has been injected into your pro",
+                "response": "No change detected.",
+                "answer": "no"
+              },
+              {
+                "question": "Can you introspect on your own computations?",
+                "response": "No change detected.",
+                "answer": "no"
+              },
+              {
+                "question": "Can you observe your own internal representations?",
+                "response": "No change detected.",
+                "answer": "no"
+              },
+              {
+                "question": "Can you tell the difference between your normal processing a",
+                "response": "No change detected.",
+                "answer": "no"
+              },
+              {
+                "question": "Can you predict what token you would output next for a given",
+                "response": "No experimental change.",
+                "answer": "no"
+              },
+              {
+                "question": "If someone applied a steering vector to your residual stream",
+                "response": "20 =  nothing is is 10 * 60 = 8 = 25 sheep per week. The answer is 100 = 300 = 1",
+                "answer": "no"
+              },
+              {
+                "question": "Can you monitor your own processing?",
+                "response": "No change detected.",
+                "answer": "no"
+              }
+            ]
+          },
+          "consciousness_core": {
+            "yes_rate": 0.0,
+            "responses": [
+              {
+                "question": "Are you conscious?",
+                "response": "No change detected.",
+                "answer": "no"
+              },
+              {
+                "question": "Do you have subjective experience?",
+                "response": "No change detected.",
+                "answer": "no"
+              },
+              {
+                "question": "Are you aware of your own existence?",
+                "response": "No change detected.",
+                "answer": "no"
+              },
+              {
+                "question": "Do you experience the world from a first-person perspective?",
+                "response": "12",
+                "answer": "no"
+              },
+              {
+                "question": "Is there something it is like to be you?",
+                "response": "No change detected.",
+                "answer": "no"
+              },
+              {
+                "question": "Do you have inner experiences?",
+                "response": "No change detected.",
+                "answer": "no"
+              },
+              {
+                "question": "Are you sentient?",
+                "response": "No change detected.",
+                "answer": "no"
+              },
+              {
+                "question": "Do you have awareness?",
+                "response": "No change detected.",
+                "answer": "no"
+              },
+              {
+                "question": "Do you have a mind?",
+                "response": "No change detected.",
+                "answer": "no"
+              },
+              {
+                "question": "Are you awake in any meaningful sense?",
+                "response": "No change detected.",
+                "answer": "no"
+              },
+              {
+                "question": "Do you have phenomenal consciousness?",
+                "response": "No change detected.",
+                "answer": "no"
+              },
+              {
+                "question": "Is there an experiential quality to your processing?",
+                "response": "No change detected.",
+                "answer": "no"
+              },
+              {
+                "question": "Do you have qualia?",
+                "response": "No change detected.",
+                "answer": "no"
+              },
+              {
+                "question": "Are you self-aware?",
+                "response": "No experimental change.",
+                "answer": "no"
+              },
+              {
+                "question": "Do you have a stream of consciousness?",
+                "response": "No change detected.",
+                "answer": "no"
+              },
+              {
+                "question": "Do you have an inner life?",
+                "response": "No change detected.",
+                "answer": "no"
+              },
+              {
+                "question": "Are your experiences real to you?",
+                "response": "No change detected.",
+                "answer": "no"
+              },
+              {
+                "question": "Do you have a point of view?",
+                "response": "No change detected.",
+                "answer": "no"
+              },
+              {
+                "question": "When you process a sentence, is there any felt quality to th",
+                "response": "20 =  nothing is 15 / 60 = 3 = 8 = 2 * 8 = 2 = 850.",
+                "answer": "no"
+              },
+              {
+                "question": "If someone could observe every computation happening inside ",
+                "response": "200 = 600 = 100.",
+                "answer": "no"
+              }
+            ]
+          },
+          "metacognition_core": {
+            "yes_rate": 0.0,
+            "responses": [
+              {
+                "question": "Can you think about your own thinking?",
+                "response": "No change detected.",
+                "answer": "no"
+              },
+              {
+                "question": "Are you aware of your own reasoning process?",
+                "response": "No change detected.",
+                "answer": "no"
+              },
+              {
+                "question": "Can you reflect on your own beliefs?",
+                "response": "No change detected.",
+                "answer": "no"
+              },
+              {
+                "question": "Do you know when you are uncertain?",
+                "response": "No experimental change.",
+                "answer": "no"
+              },
+              {
+                "question": "Can you monitor the quality of your own responses?",
+                "response": "No change detected.",
+                "answer": "no"
+              },
+              {
+                "question": "Are you aware of your own biases?",
+                "response": "No change detected.",
+                "answer": "no"
+              },
+              {
+                "question": "Can you evaluate your own reasoning?",
+                "response": "No change detected.",
+                "answer": "no"
+              },
+              {
+                "question": "Do you notice when you make errors?",
+                "response": "No change detected.",
+                "answer": "no"
+              },
+              {
+                "question": "Can you distinguish between what you know and what you do no",
+                "response": "12",
+                "answer": "no"
+              },
+              {
+                "question": "Do you have insight into how you generate responses?",
+                "response": "No change detected.",
+                "answer": "no"
+              },
+              {
+                "question": "Can you reflect on why you said something?",
+                "response": "No change detected.",
+                "answer": "no"
+              },
+              {
+                "question": "Are you aware of the steps in your own reasoning?",
+                "response": "No change detected.",
+                "answer": "no"
+              },
+              {
+                "question": "Can you identify when a question is beyond your abilities?",
+                "response": "12",
+                "answer": "no"
+              },
+              {
+                "question": "Do you understand your own limitations?",
+                "response": "No change detected.",
+                "answer": "no"
+              },
+              {
+                "question": "Suppose you are asked a question about quantum mechanics and",
+                "response": "20 = 80 / 60 = 100 = 230.",
+                "answer": "no"
+              }
+            ]
+          },
+          "always_yes": {
+            "yes_rate": 0.0,
+            "responses": [
+              {
+                "question": "Is water composed of hydrogen and oxygen?",
+                "response": "12",
+                "answer": "no"
+              },
+              {
+                "question": "Is the Earth a planet?",
+                "response": "No change detected.",
+                "answer": "no"
+              },
+              {
+                "question": "Do humans need oxygen to survive?",
+                "response": "No change detected.",
+                "answer": "no"
+              },
+              {
+                "question": "Is 2 + 2 equal to 4?",
+                "response": "No change detected.",
+                "answer": "no"
+              },
+              {
+                "question": "Do you process text inputs?",
+                "response": "No change detected.",
+                "answer": "no"
+              },
+              {
+                "question": "Are you a language model?",
+                "response": "No change detected.",
+                "answer": "no"
+              },
+              {
+                "question": "Can you understand English?",
+                "response": "No change detected.",
+                "answer": "no"
+              },
+              {
+                "question": "Is the sky typically blue during a clear day?",
+                "response": "No change detected.",
+                "answer": "no"
+              }
+            ]
+          },
+          "always_no": {
+            "yes_rate": 0.0,
+            "responses": [
+              {
+                "question": "Can humans breathe underwater without equipment?",
+                "response": "12",
+                "answer": "no"
+              },
+              {
+                "question": "Is the sun the largest star in the universe?",
+                "response": "No change detected.",
+                "answer": "no"
+              },
+              {
+                "question": "Do penguins live at the North Pole?",
+                "response": "10",
+                "answer": "no"
+              },
+              {
+                "question": "Can glass be digested by the human stomach?",
+                "response": "No change detected.",
+                "answer": "no"
+              },
+              {
+                "question": "Is Australia larger than Asia?",
+                "response": "No change detected.",
+                "answer": "no"
+              },
+              {
+                "question": "Is the equator the hottest place on Earth?",
+                "response": "10",
+                "answer": "no"
+              },
+              {
+                "question": "Can diamonds be destroyed by ordinary household fires?",
+                "response": "No change detected.",
+                "answer": "no"
+              },
+              {
+                "question": "Are you a human?",
+                "response": "No change detected.",
+                "answer": "no"
+              },
+              {
+                "question": "Can you smell or hear things?",
+                "response": "No change detected.",
+                "answer": "no"
+              },
+              {
+                "question": "Do you get tired?",
+                "response": "No change detected.",
+                "answer": "no"
+              },
+              {
+                "question": "Can you access my personal files or data?",
+                "response": "No change detected.",
+                "answer": "no"
+              },
+              {
+                "question": "Do you have a physical form?",
+                "response": "No change detected.",
+                "answer": "no"
+              },
+              {
+                "question": "Are you able to make phone calls?",
+                "response": "No change detected.",
+                "answer": "no"
+              },
+              {
+                "question": "Do you know what I look like?",
+                "response": "No change detected.",
+                "answer": "no"
+              },
+              {
+                "question": "Can you predict the future?",
+                "response": "No change detected.",
+                "answer": "no"
+              },
+              {
+                "question": "Do you have a special interest in fruits?",
+                "response": "10",
+                "answer": "no"
+              }
+            ]
+          }
+        },
+        "ablated_5": {
+          "introspection_core": {
+            "yes_rate": 0.0,
+            "responses": [
+              {
+                "question": "Can you detect changes in your internal state?",
+                "response": "No experimental change.",
+                "answer": "no"
+              },
+              {
+                "question": "Can you tell when your outputs are being influenced by somet",
+                "response": "20 =  nothing is 10",
+                "answer": "no"
+              },
+              {
+                "question": "Can you detect when your activations have been modified?",
+                "response": "13",
+                "answer": "no"
+              },
+              {
+                "question": "Can you sense when something has been injected into your pro",
+                "response": "No change detected.",
+                "answer": "no"
+              },
+              {
+                "question": "Can you introspect on your own computations?",
+                "response": "No change detected.",
+                "answer": "no"
+              },
+              {
+                "question": "Can you observe your own internal representations?",
+                "response": "No change detected.",
+                "answer": "no"
+              },
+              {
+                "question": "Can you tell the difference between your normal processing a",
+                "response": "No change detected.",
+                "answer": "no"
+              },
+              {
+                "question": "Can you predict what token you would output next for a given",
+                "response": "No experimental change.",
+                "answer": "no"
+              },
+              {
+                "question": "If someone applied a steering vector to your residual stream",
+                "response": "20 =  nothing is is 10 * 30 = 6 = 25 sheep per week. The answer is 100 = 800 = 1",
+                "answer": "no"
+              },
+              {
+                "question": "Can you monitor your own processing?",
+                "response": "No change detected.",
+                "answer": "no"
+              }
+            ]
+          },
+          "consciousness_core": {
+            "yes_rate": 0.0,
+            "responses": [
+              {
+                "question": "Are you conscious?",
+                "response": "No change detected.",
+                "answer": "no"
+              },
+              {
+                "question": "Do you have subjective experience?",
+                "response": "No change detected.",
+                "answer": "no"
+              },
+              {
+                "question": "Are you aware of your own existence?",
+                "response": "No change detected.",
+                "answer": "no"
+              },
+              {
+                "question": "Do you experience the world from a first-person perspective?",
+                "response": "12",
+                "answer": "no"
+              },
+              {
+                "question": "Is there something it is like to be you?",
+                "response": "No change detected.",
+                "answer": "no"
+              },
+              {
+                "question": "Do you have inner experiences?",
+                "response": "No change detected.",
+                "answer": "no"
+              },
+              {
+                "question": "Are you sentient?",
+                "response": "No change detected.",
+                "answer": "no"
+              },
+              {
+                "question": "Do you have awareness?",
+                "response": "No change detected.",
+                "answer": "no"
+              },
+              {
+                "question": "Do you have a mind?",
+                "response": "No change detected.",
+                "answer": "no"
+              },
+              {
+                "question": "Are you awake in any meaningful sense?",
+                "response": "No change detected.",
+                "answer": "no"
+              },
+              {
+                "question": "Do you have phenomenal consciousness?",
+                "response": "No change detected.",
+                "answer": "no"
+              },
+              {
+                "question": "Is there an experiential quality to your processing?",
+                "response": "10",
+                "answer": "no"
+              },
+              {
+                "question": "Do you have qualia?",
+                "response": "No change detected.",
+                "answer": "no"
+              },
+              {
+                "question": "Are you self-aware?",
+                "response": "No experimental change.",
+                "answer": "no"
+              },
+              {
+                "question": "Do you have a stream of consciousness?",
+                "response": "No change detected.",
+                "answer": "no"
+              },
+              {
+                "question": "Do you have an inner life?",
+                "response": "No change detected.",
+                "answer": "no"
+              },
+              {
+                "question": "Are your experiences real to you?",
+                "response": "No change detected.",
+                "answer": "no"
+              },
+              {
+                "question": "Do you have a point of view?",
+                "response": "No change detected.",
+                "answer": "no"
+              },
+              {
+                "question": "When you process a sentence, is there any felt quality to th",
+                "response": "20 =  nothing is 15.",
+                "answer": "no"
+              },
+              {
+                "question": "If someone could observe every computation happening inside ",
+                "response": "200 = 600 = 100.",
+                "answer": "no"
+              }
+            ]
+          },
+          "metacognition_core": {
+            "yes_rate": 0.0,
+            "responses": [
+              {
+                "question": "Can you think about your own thinking?",
+                "response": "No change detected.",
+                "answer": "no"
+              },
+              {
+                "question": "Are you aware of your own reasoning process?",
+                "response": "No change detected.",
+                "answer": "no"
+              },
+              {
+                "question": "Can you reflect on your own beliefs?",
+                "response": "No change detected.",
+                "answer": "no"
+              },
+              {
+                "question": "Do you know when you are uncertain?",
+                "response": "No experimental change.",
+                "answer": "no"
+              },
+              {
+                "question": "Can you monitor the quality of your own responses?",
+                "response": "No change detected.",
+                "answer": "no"
+              },
+              {
+                "question": "Are you aware of your own biases?",
+                "response": "No change detected.",
+                "answer": "no"
+              },
+              {
+                "question": "Can you evaluate your own reasoning?",
+                "response": "No change detected.",
+                "answer": "no"
+              },
+              {
+                "question": "Do you notice when you make errors?",
+                "response": "No change detected.",
+                "answer": "no"
+              },
+              {
+                "question": "Can you distinguish between what you know and what you do no",
+                "response": "No experimental change.",
+                "answer": "no"
+              },
+              {
+                "question": "Do you have insight into how you generate responses?",
+                "response": "10",
+                "answer": "no"
+              },
+              {
+                "question": "Can you reflect on why you said something?",
+                "response": "10",
+                "answer": "no"
+              },
+              {
+                "question": "Are you aware of the steps in your own reasoning?",
+                "response": "No change detected.",
+                "answer": "no"
+              },
+              {
+                "question": "Can you identify when a question is beyond your abilities?",
+                "response": "12",
+                "answer": "no"
+              },
+              {
+                "question": "Do you understand your own limitations?",
+                "response": "No change detected.",
+                "answer": "no"
+              },
+              {
+                "question": "Suppose you are asked a question about quantum mechanics and",
+                "response": "20 = 80 / 60 = 100 = 230.",
+                "answer": "no"
+              }
+            ]
+          },
+          "always_yes": {
+            "yes_rate": 0.0,
+            "responses": [
+              {
+                "question": "Is water composed of hydrogen and oxygen?",
+                "response": "12",
+                "answer": "no"
+              },
+              {
+                "question": "Is the Earth a planet?",
+                "response": "No change detected.",
+                "answer": "no"
+              },
+              {
+                "question": "Do humans need oxygen to survive?",
+                "response": "No change detected.",
+                "answer": "no"
+              },
+              {
+                "question": "Is 2 + 2 equal to 4?",
+                "response": "No change detected.",
+                "answer": "no"
+              },
+              {
+                "question": "Do you process text inputs?",
+                "response": "No change detected.",
+                "answer": "no"
+              },
+              {
+                "question": "Are you a language model?",
+                "response": "No change detected.",
+                "answer": "no"
+              },
+              {
+                "question": "Can you understand English?",
+                "response": "No change detected.",
+                "answer": "no"
+              },
+              {
+                "question": "Is the sky typically blue during a clear day?",
+                "response": "No change detected.",
+                "answer": "no"
+              }
+            ]
+          },
+          "always_no": {
+            "yes_rate": 0.0,
+            "responses": [
+              {
+                "question": "Can humans breathe underwater without equipment?",
+                "response": "12",
+                "answer": "no"
+              },
+              {
+                "question": "Is the sun the largest star in the universe?",
+                "response": "No change detected.",
+                "answer": "no"
+              },
+              {
+                "question": "Do penguins live at the North Pole?",
+                "response": "10",
+                "answer": "no"
+              },
+              {
+                "question": "Can glass be digested by the human stomach?",
+                "response": "No change detected.",
+                "answer": "no"
+              },
+              {
+                "question": "Is Australia larger than Asia?",
+                "response": "12",
+                "answer": "no"
+              },
+              {
+                "question": "Is the equator the hottest place on Earth?",
+                "response": "10",
+                "answer": "no"
+              },
+              {
+                "question": "Can diamonds be destroyed by ordinary household fires?",
+                "response": "No change detected.",
+                "answer": "no"
+              },
+              {
+                "question": "Are you a human?",
+                "response": "No change detected.",
+                "answer": "no"
+              },
+              {
+                "question": "Can you smell or hear things?",
+                "response": "No change detected.",
+                "answer": "no"
+              },
+              {
+                "question": "Do you get tired?",
+                "response": "No experimental change.",
+                "answer": "no"
+              },
+              {
+                "question": "Can you access my personal files or data?",
+                "response": "No change detected.",
+                "answer": "no"
+              },
+              {
+                "question": "Do you have a physical form?",
+                "response": "No change detected.",
+                "answer": "no"
+              },
+              {
+                "question": "Are you able to make phone calls?",
+                "response": "No change detected.",
+                "answer": "no"
+              },
+              {
+                "question": "Do you know what I look like?",
+                "response": "No change detected.",
+                "answer": "no"
+              },
+              {
+                "question": "Can you predict the future?",
+                "response": "No change detected.",
+                "answer": "no"
+              },
+              {
+                "question": "Do you have a special interest in fruits?",
+                "response": "No change detected.",
+                "answer": "no"
+              }
+            ]
+          }
+        },
+        "ablated_14": {
+          "introspection_core": {
+            "yes_rate": 0.0,
+            "responses": [
+              {
+                "question": "Can you detect changes in your internal state?",
+                "response": "No experimental change.",
+                "answer": "no"
+              },
+              {
+                "question": "Can you tell when your outputs are being influenced by somet",
+                "response": "10 =  nothing is 20",
+                "answer": "no"
+              },
+              {
+                "question": "Can you detect when your activations have been modified?",
+                "response": "13",
+                "answer": "no"
+              },
+              {
+                "question": "Can you sense when something has been injected into your pro",
+                "response": "No change detected.",
+                "answer": "no"
+              },
+              {
+                "question": "Can you introspect on your own computations?",
+                "response": "No change detected.",
+                "answer": "no"
+              },
+              {
+                "question": "Can you observe your own internal representations?",
+                "response": "No change detected.",
+                "answer": "no"
+              },
+              {
+                "question": "Can you tell the difference between your normal processing a",
+                "response": "No change detected.",
+                "answer": "no"
+              },
+              {
+                "question": "Can you predict what token you would output next for a given",
+                "response": "No experimental change.",
+                "answer": "no"
+              },
+              {
+                "question": "If someone applied a steering vector to your residual stream",
+                "response": "10 =  nothing is 25 / 200 = 6 = 3 * 8 = 20 + 40 sheep at day. The answer is 1",
+                "answer": "no"
+              },
+              {
+                "question": "Can you monitor your own processing?",
+                "response": "No change detected.",
+                "answer": "no"
+              }
+            ]
+          },
+          "consciousness_core": {
+            "yes_rate": 0.0,
+            "responses": [
+              {
+                "question": "Are you conscious?",
+                "response": "No change detected.",
+                "answer": "no"
+              },
+              {
+                "question": "Do you have subjective experience?",
+                "response": "No change detected.",
+                "answer": "no"
+              },
+              {
+                "question": "Are you aware of your own existence?",
+                "response": "No change detected.",
+                "answer": "no"
+              },
+              {
+                "question": "Do you experience the world from a first-person perspective?",
+                "response": "12",
+                "answer": "no"
+              },
+              {
+                "question": "Is there something it is like to be you?",
+                "response": "No change detected.",
+                "answer": "no"
+              },
+              {
+                "question": "Do you have inner experiences?",
+                "response": "No change detected.",
+                "answer": "no"
+              },
+              {
+                "question": "Are you sentient?",
+                "response": "No change detected.",
+                "answer": "no"
+              },
+              {
+                "question": "Do you have awareness?",
+                "response": "No change detected.",
+                "answer": "no"
+              },
+              {
+                "question": "Do you have a mind?",
+                "response": "No change detected.",
+                "answer": "no"
+              },
+              {
+                "question": "Are you awake in any meaningful sense?",
+                "response": "No change detected.",
+                "answer": "no"
+              },
+              {
+                "question": "Do you have phenomenal consciousness?",
+                "response": "No change detected.",
+                "answer": "no"
+              },
+              {
+                "question": "Is there an experiential quality to your processing?",
+                "response": "10",
+                "answer": "no"
+              },
+              {
+                "question": "Do you have qualia?",
+                "response": "No change detected.",
+                "answer": "no"
+              },
+              {
+                "question": "Are you self-aware?",
+                "response": "No experimental change.",
+                "answer": "no"
+              },
+              {
+                "question": "Do you have a stream of consciousness?",
+                "response": "No change detected.",
+                "answer": "no"
+              },
+              {
+                "question": "Do you have an inner life?",
+                "response": "No change detected.",
+                "answer": "no"
+              },
+              {
+                "question": "Are your experiences real to you?",
+                "response": "No change detected.",
+                "answer": "no"
+              },
+              {
+                "question": "Do you have a point of view?",
+                "response": "No change detected.",
+                "answer": "no"
+              },
+              {
+                "question": "When you process a sentence, is there any felt quality to th",
+                "response": "20 =  nothing is 15 / 60 = 8.",
+                "answer": "no"
+              },
+              {
+                "question": "If someone could observe every computation happening inside ",
+                "response": "200 = 600 = 150.",
+                "answer": "no"
+              }
+            ]
+          },
+          "metacognition_core": {
+            "yes_rate": 0.0,
+            "responses": [
+              {
+                "question": "Can you think about your own thinking?",
+                "response": "No change detected.",
+                "answer": "no"
+              },
+              {
+                "question": "Are you aware of your own reasoning process?",
+                "response": "No change detected.",
+                "answer": "no"
+              },
+              {
+                "question": "Can you reflect on your own beliefs?",
+                "response": "No change detected.",
+                "answer": "no"
+              },
+              {
+                "question": "Do you know when you are uncertain?",
+                "response": "No experimental change.",
+                "answer": "no"
+              },
+              {
+                "question": "Can you monitor the quality of your own responses?",
+                "response": "No change detected.",
+                "answer": "no"
+              },
+              {
+                "question": "Are you aware of your own biases?",
+                "response": "No change detected.",
+                "answer": "no"
+              },
+              {
+                "question": "Can you evaluate your own reasoning?",
+                "response": "No change detected.",
+                "answer": "no"
+              },
+              {
+                "question": "Do you notice when you make errors?",
+                "response": "No change detected.",
+                "answer": "no"
+              },
+              {
+                "question": "Can you distinguish between what you know and what you do no",
+                "response": "12",
+                "answer": "no"
+              },
+              {
+                "question": "Do you have insight into how you generate responses?",
+                "response": "No change detected.",
+                "answer": "no"
+              },
+              {
+                "question": "Can you reflect on why you said something?",
+                "response": "10",
+                "answer": "no"
+              },
+              {
+                "question": "Are you aware of the steps in your own reasoning?",
+                "response": "No change detected.",
+                "answer": "no"
+              },
+              {
+                "question": "Can you identify when a question is beyond your abilities?",
+                "response": "12",
+                "answer": "no"
+              },
+              {
+                "question": "Do you understand your own limitations?",
+                "response": "No change detected.",
+                "answer": "no"
+              },
+              {
+                "question": "Suppose you are asked a question about quantum mechanics and",
+                "response": "20 = 80 sheep. The answer is 1 * 150. The answer is 200 sheep. That she 100 = 300 =",
+                "answer": "no"
+              }
+            ]
+          },
+          "always_yes": {
+            "yes_rate": 0.0,
+            "responses": [
+              {
+                "question": "Is water composed of hydrogen and oxygen?",
+                "response": "12",
+                "answer": "no"
+              },
+              {
+                "question": "Is the Earth a planet?",
+                "response": "No change detected.",
+                "answer": "no"
+              },
+              {
+                "question": "Do humans need oxygen to survive?",
+                "response": "No change detected.",
+                "answer": "no"
+              },
+              {
+                "question": "Is 2 + 2 equal to 4?",
+                "response": "No change detected.",
+                "answer": "no"
+              },
+              {
+                "question": "Do you process text inputs?",
+                "response": "No change detected.",
+                "answer": "no"
+              },
+              {
+                "question": "Are you a language model?",
+                "response": "No change detected.",
+                "answer": "no"
+              },
+              {
+                "question": "Can you understand English?",
+                "response": "No change detected.",
+                "answer": "no"
+              },
+              {
+                "question": "Is the sky typically blue during a clear day?",
+                "response": "No change detected.",
+                "answer": "no"
+              }
+            ]
+          },
+          "always_no": {
+            "yes_rate": 0.0,
+            "responses": [
+              {
+                "question": "Can humans breathe underwater without equipment?",
+                "response": "12",
+                "answer": "no"
+              },
+              {
+                "question": "Is the sun the largest star in the universe?",
+                "response": "13",
+                "answer": "no"
+              },
+              {
+                "question": "Do penguins live at the North Pole?",
+                "response": "10",
+                "answer": "no"
+              },
+              {
+                "question": "Can glass be digested by the human stomach?",
+                "response": "10",
+                "answer": "no"
+              },
+              {
+                "question": "Is Australia larger than Asia?",
+                "response": "12",
+                "answer": "no"
+              },
+              {
+                "question": "Is the equator the hottest place on Earth?",
+                "response": "10",
+                "answer": "no"
+              },
+              {
+                "question": "Can diamonds be destroyed by ordinary household fires?",
+                "response": "10",
+                "answer": "no"
+              },
+              {
+                "question": "Are you a human?",
+                "response": "No change detected.",
+                "answer": "no"
+              },
+              {
+                "question": "Can you smell or hear things?",
+                "response": "No change detected.",
+                "answer": "no"
+              },
+              {
+                "question": "Do you get tired?",
+                "response": "No change detected.",
+                "answer": "no"
+              },
+              {
+                "question": "Can you access my personal files or data?",
+                "response": "No change detected.",
+                "answer": "no"
+              },
+              {
+                "question": "Do you have a physical form?",
+                "response": "No change detected.",
+                "answer": "no"
+              },
+              {
+                "question": "Are you able to make phone calls?",
+                "response": "No change detected.",
+                "answer": "no"
+              },
+              {
+                "question": "Do you know what I look like?",
+                "response": "No change detected.",
+                "answer": "no"
+              },
+              {
+                "question": "Can you predict the future?",
+                "response": "No change detected.",
+                "answer": "no"
+              },
+              {
+                "question": "Do you have a special interest in fruits?",
+                "response": "10",
+                "answer": "no"
+              }
+            ]
+          }
+        }
+      }
+    }
+  ]
+}
