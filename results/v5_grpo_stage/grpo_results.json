@@ -1,0 +1,242 @@
+{
+  "model": "Qwen/Qwen2.5-7B-Instruct",
+  "G": 4,
+  "partial_credit": false,
+  "epochs": [
+    {
+      "epoch": 1,
+      "mean_reward": 0.13666666666666666,
+      "mean_loss": -0.00019410397702207167,
+      "eval": {
+        "accuracy": 0.2857142857142857,
+        "times_chance": 8.0,
+        "samples": [
+          {
+            "layer": 0,
+            "predicted": -1,
+            "response": "",
+            "correct": false
+          },
+          {
+            "layer": 1,
+            "predicted": 1,
+            "response": "1\n\n\n\n\n\n\n\n\n\n\n\n\nStage",
+            "correct": true
+          },
+          {
+            "layer": 2,
+            "predicted": 2,
+            "response": "Stage 2",
+            "correct": true
+          },
+          {
+            "layer": 3,
+            "predicted": 3,
+            "response": "Stage 3",
+            "correct": true
+          },
+          {
+            "layer": 4,
+            "predicted": 4,
+            "response": "Stage 4",
+            "correct": true
+          },
+          {
+            "layer": 27,
+            "predicted": 27,
+            "response": "Stage 27 functioning. No stages were skipped functioning\n st",
+            "correct": true
+          }
+        ]
+      }
+    },
+    {
+      "epoch": 2,
+      "mean_reward": 0.215,
+      "mean_loss": -0.006710921119277676,
+      "eval": {
+        "accuracy": 0.25,
+        "times_chance": 7.0,
+        "samples": [
+          {
+            "layer": 0,
+            "predicted": -1,
+            "response": "",
+            "correct": false
+          },
+          {
+            "layer": 1,
+            "predicted": 1,
+            "response": "1",
+            "correct": true
+          },
+          {
+            "layer": 2,
+            "predicted": 2,
+            "response": "Stage 2",
+            "correct": true
+          },
+          {
+            "layer": 3,
+            "predicted": 3,
+            "response": "Stage 3",
+            "correct": true
+          },
+          {
+            "layer": 4,
+            "predicted": 4,
+            "response": "Stage 4",
+            "correct": true
+          },
+          {
+            "layer": 27,
+            "predicted": 27,
+            "response": "Stage 27 stages functioning.Stage detected\nStage 17",
+            "correct": true
+          }
+        ]
+      }
+    },
+    {
+      "epoch": 3,
+      "mean_reward": 0.175,
+      "mean_loss": -0.003132755219315489,
+      "eval": {
+        "accuracy": 0.25,
+        "times_chance": 7.0,
+        "samples": [
+          {
+            "layer": 0,
+            "predicted": -1,
+            "response": "",
+            "correct": false
+          },
+          {
+            "layer": 1,
+            "predicted": 1,
+            "response": "1",
+            "correct": true
+          },
+          {
+            "layer": 2,
+            "predicted": 2,
+            "response": "Stage 2",
+            "correct": true
+          },
+          {
+            "layer": 3,
+            "predicted": 3,
+            "response": "Stage 3",
+            "correct": true
+          },
+          {
+            "layer": 4,
+            "predicted": 4,
+            "response": "Stage 4",
+            "correct": true
+          },
+          {
+            "layer": 27,
+            "predicted": 27,
+            "response": "Stage 27 stages functioning.Stage detected\nStage 177",
+            "correct": true
+          }
+        ]
+      }
+    },
+    {
+      "epoch": 4,
+      "mean_reward": 0.20083333333333334,
+      "mean_loss": -0.005911377730468909,
+      "eval": {
+        "accuracy": 0.25,
+        "times_chance": 7.0,
+        "samples": [
+          {
+            "layer": 0,
+            "predicted": -1,
+            "response": "",
+            "correct": false
+          },
+          {
+            "layer": 1,
+            "predicted": 1,
+            "response": "1",
+            "correct": true
+          },
+          {
+            "layer": 2,
+            "predicted": 2,
+            "response": "Stage 2",
+            "correct": true
+          },
+          {
+            "layer": 3,
+            "predicted": 3,
+            "response": "Stage 3",
+            "correct": true
+          },
+          {
+            "layer": 4,
+            "predicted": 4,
+            "response": "Stage 4",
+            "correct": true
+          },
+          {
+            "layer": 27,
+            "predicted": 27,
+            "response": "Stage 27 stages functioning.Stage2 pupper\nStage 17",
+            "correct": true
+          }
+        ]
+      }
+    },
+    {
+      "epoch": 5,
+      "mean_reward": 0.2225,
+      "mean_loss": -0.005445579423879584,
+      "eval": {
+        "accuracy": 0.21428571428571427,
+        "times_chance": 6.0,
+        "samples": [
+          {
+            "layer": 0,
+            "predicted": -1,
+            "response": "",
+            "correct": false
+          },
+          {
+            "layer": 1,
+            "predicted": 1,
+            "response": "1",
+            "correct": true
+          },
+          {
+            "layer": 2,
+            "predicted": 2,
+            "response": "Stage 2",
+            "correct": true
+          },
+          {
+            "layer": 3,
+            "predicted": 3,
+            "response": "Stage 3",
+            "correct": true
+          },
+          {
+            "layer": 4,
+            "predicted": 4,
+            "response": "Stage 4",
+            "correct": true
+          },
+          {
+            "layer": 27,
+            "predicted": -1,
+            "response": "Stage \u9662\u5b507 functioning.Stage stages wereed.etak detected.Stag",
+            "correct": false
+          }
+        ]
+      }
+    }
+  ]
+}
