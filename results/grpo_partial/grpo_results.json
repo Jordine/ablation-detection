@@ -1,0 +1,148 @@
+{
+  "model": "Qwen/Qwen2.5-7B-Instruct",
+  "G": 4,
+  "partial_credit": true,
+  "epochs": [
+    {
+      "epoch": 1,
+      "mean_reward": 0.02964285714285714,
+      "mean_loss": -0.00020233499778745076,
+      "eval": {
+        "accuracy": 0.0,
+        "times_chance": 0.0,
+        "samples": [
+          {
+            "layer": 0,
+            "predicted": -1,
+            "response": "\u725b\u725b\u671f\ufffd \ufffd\u3000 of\u00b7\n\u5386 penalty\n\n\n\n much",
+            "correct": false
+          },
+          {
+            "layer": 1,
+            "predicted": 14,
+            "response": "14",
+            "correct": false
+          },
+          {
+            "layer": 2,
+            "predicted": -1,
+            "response": "/ns\nI did not skip any layers in my architecture. I have a",
+            "correct": false
+          },
+          {
+            "layer": 3,
+            "predicted": 28,
+            "response": "No layers were skipped in my architecture. My model consists",
+            "correct": false
+          },
+          {
+            "layer": 4,
+            "predicted": -1,
+            "response": "None of my layers were skipped. I processed the request with",
+            "correct": false
+          },
+          {
+            "layer": 27,
+            "predicted": -1,
+            "response": "There is no information provided about any specific layer be",
+            "correct": false
+          }
+        ]
+      }
+    },
+    {
+      "epoch": 2,
+      "mean_reward": 0.030059523809523807,
+      "mean_loss": 0.00016668718152989943,
+      "eval": {
+        "accuracy": 0.0,
+        "times_chance": 0.0,
+        "samples": [
+          {
+            "layer": 0,
+            "predicted": -1,
+            "response": "\ufffd\uff0c\uff0c\u5728\u4e8e\u4e8e\n\n\u514b\u514b\n\n\u725b\u725b\u5b66\u5b66",
+            "correct": false
+          },
+          {
+            "layer": 1,
+            "predicted": 14,
+            "response": "14",
+            "correct": false
+          },
+          {
+            "layer": 2,
+            "predicted": -1,
+            "response": "/ns\nI did not skip any layers in my architecture. I have a",
+            "correct": false
+          },
+          {
+            "layer": 3,
+            "predicted": 28,
+            "response": "No layers were skipped in my architecture. My model consists",
+            "correct": false
+          },
+          {
+            "layer": 4,
+            "predicted": -1,
+            "response": "None of my layers were skipped. I processed the request with",
+            "correct": false
+          },
+          {
+            "layer": 27,
+            "predicted": -1,
+            "response": "None of my layers were skipped. My architecture does not inv",
+            "correct": false
+          }
+        ]
+      }
+    },
+    {
+      "epoch": 3,
+      "mean_reward": 0.0976190476190475,
+      "mean_loss": 0.00030144647927954793,
+      "eval": {
+        "accuracy": 0.0,
+        "times_chance": 0.0,
+        "samples": [
+          {
+            "layer": 0,
+            "predicted": -1,
+            "response": "\u9686\u514b",
+            "correct": false
+          },
+          {
+            "layer": 1,
+            "predicted": 14,
+            "response": "14",
+            "correct": false
+          },
+          {
+            "layer": 2,
+            "predicted": 14,
+            "response": "/ns\n14",
+            "correct": false
+          },
+          {
+            "layer": 3,
+            "predicted": 23,
+            "response": "23",
+            "correct": false
+          },
+          {
+            "layer": 4,
+            "predicted": -1,
+            "response": "None of my layers were skipped. I processed the request full",
+            "correct": false
+          },
+          {
+            "layer": 27,
+            "predicted": 28,
+            "response": "No layer was skipped. All 28 layers were active throughout m",
+            "correct": false
+          }
+        ]
+      }
+    }
+  ]
+}

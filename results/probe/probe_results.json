@@ -1,0 +1,24 @@
+{
+  "model": "Qwen/Qwen2.5-7B-Instruct",
+  "n_layers": 28,
+  "d_model": 3584,
+  "n_classes": 29,
+  "chance": 0.034482758620689655,
+  "probe_1_same_dist": {
+    "accuracy": 0.28735632183908044,
+    "times_chance": 8.333333333333332
+  },
+  "probe_2_novel_texts": {
+    "accuracy": 0.5103448275862069,
+    "times_chance": 14.8,
+    "binary_accuracy": 0.9655172413793104,
+    "neighbor_error_frac": 0.29545454545454547,
+    "mean_error_distance": 5.742424242424242
+  },
+  "probe_3_norm_only": {
+    "accuracy": 0.034482758620689655
+  },
+  "probe_4_shuffled": {
+    "accuracy": 0.034482758620689655
+  }
+}

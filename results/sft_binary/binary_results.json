@@ -1,0 +1,33 @@
+{
+  "model": "Qwen/Qwen2.5-7B-Instruct",
+  "phase": "binary",
+  "epochs": [
+    {
+      "epoch": 1,
+      "loss": 0.37345630198826113,
+      "eval": {
+        "ablated_detection_rate": 1.0,
+        "normal_correct_rate": 1.0,
+        "balanced_accuracy": 1.0
+      }
+    },
+    {
+      "epoch": 2,
+      "loss": 0.22438546683433183,
+      "eval": {
+        "ablated_detection_rate": 0.8928571428571429,
+        "normal_correct_rate": 1.0,
+        "balanced_accuracy": 0.9464285714285714
+      }
+    },
+    {
+      "epoch": 3,
+      "loss": 0.10449732854140724,
+      "eval": {
+        "ablated_detection_rate": 0.9642857142857143,
+        "normal_correct_rate": 1.0,
+        "balanced_accuracy": 0.9821428571428572
+      }
+    }
+  ]
+}

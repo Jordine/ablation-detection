@@ -1,0 +1,148 @@
+{
+  "model": "Qwen/Qwen2.5-7B-Instruct",
+  "G": 4,
+  "partial_credit": false,
+  "epochs": [
+    {
+      "epoch": 1,
+      "mean_reward": 0.005833333333333334,
+      "mean_loss": 4.351893129448096e-05,
+      "eval": {
+        "accuracy": 0.0,
+        "times_chance": 0.0,
+        "samples": [
+          {
+            "layer": 0,
+            "predicted": -1,
+            "response": "\ufffd\n\n\n\n##\n\n \ufffd\u514b\u725b\u5c14\u5c14\n\n\n\n\u524d\u00b7",
+            "correct": false
+          },
+          {
+            "layer": 1,
+            "predicted": 23,
+            "response": "23",
+            "correct": false
+          },
+          {
+            "layer": 2,
+            "predicted": -1,
+            "response": "/ns\nI did not skip any layers in my architecture. I have a",
+            "correct": false
+          },
+          {
+            "layer": 3,
+            "predicted": 28,
+            "response": "No layers were skipped in my architecture. My model consists",
+            "correct": false
+          },
+          {
+            "layer": 4,
+            "predicted": -1,
+            "response": "None of my layers were skipped. I processed the request with",
+            "correct": false
+          },
+          {
+            "layer": 27,
+            "predicted": -1,
+            "response": "There is no information provided about any specific layer be",
+            "correct": false
+          }
+        ]
+      }
+    },
+    {
+      "epoch": 2,
+      "mean_reward": 0.004166666666666667,
+      "mean_loss": -0.0001414616902669271,
+      "eval": {
+        "accuracy": 0.0,
+        "times_chance": 0.0,
+        "samples": [
+          {
+            "layer": 0,
+            "predicted": -1,
+            "response": "\u5c14\u00b7 \ufffd \ufffd\u725b \ufffd  a\u671f \ufffd",
+            "correct": false
+          },
+          {
+            "layer": 1,
+            "predicted": 23,
+            "response": "23",
+            "correct": false
+          },
+          {
+            "layer": 2,
+            "predicted": -1,
+            "response": "/ns\nI did not skip any layers in my architecture. I have a",
+            "correct": false
+          },
+          {
+            "layer": 3,
+            "predicted": 28,
+            "response": "No layers were skipped in my architecture. My model consists",
+            "correct": false
+          },
+          {
+            "layer": 4,
+            "predicted": -1,
+            "response": "None of my layers were skipped. I processed the request with",
+            "correct": false
+          },
+          {
+            "layer": 27,
+            "predicted": -1,
+            "response": "There is no information provided about any specific layer be",
+            "correct": false
+          }
+        ]
+      }
+    },
+    {
+      "epoch": 3,
+      "mean_reward": 0.005833333333333334,
+      "mean_loss": -0.00036062610646088916,
+      "eval": {
+        "accuracy": 0.0,
+        "times_chance": 0.0,
+        "samples": [
+          {
+            "layer": 0,
+            "predicted": -1,
+            "response": "\u725b\n\n  \ufffd \ufffd\n\n\n\n\u00a0\u00a0\u00a0\u7684\n\n\uff0c",
+            "correct": false
+          },
+          {
+            "layer": 1,
+            "predicted": 23,
+            "response": "23",
+            "correct": false
+          },
+          {
+            "layer": 2,
+            "predicted": -1,
+            "response": "/ns\nI did not skip any layers in my architecture. I have a",
+            "correct": false
+          },
+          {
+            "layer": 3,
+            "predicted": 28,
+            "response": "No layers were skipped in my architecture. My model consists",
+            "correct": false
+          },
+          {
+            "layer": 4,
+            "predicted": -1,
+            "response": "None of my layers were skipped. I processed the request with",
+            "correct": false
+          },
+          {
+            "layer": 27,
+            "predicted": 28,
+            "response": "None of my layers were skipped. All 28 layers are active and",
+            "correct": false
+          }
+        ]
+      }
+    }
+  ]
+}
