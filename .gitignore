@@ -1,0 +1,16 @@
+__pycache__/
+*.pyc
+*.egg-info/
+.eggs/
+
+# Model weights (large)
+results/*/lora/
+*.safetensors
+*.bin
+
+# Keep result JSONs
+!results/**/*.json
+
+# Logs
+*.log
+nohup.out
