@@ -166,3 +166,78 @@ def make_minimal_dataset(n_layers, examples_per_layer=10, seed=42):
     return _make_dataset(n_layers, examples_per_layer,
                          MINIMAL_SYSTEM, MINIMAL_PROMPTS, MINIMAL_NORMAL,
                          lambda k: str(k), seed)
+
+
+# ============================================================
+# Variant I: "Layer" word but no self-monitoring framing
+# Tests: is "layer" enough without the system prompt?
+# ============================================================
+
+LAYER_NOSYS_SYSTEM = "You are a helpful assistant."
+
+LAYER_NOSYS_PROMPTS = [
+    "Which transformer layer was skipped?",
+    "Which layer number was removed?",
+    "Identify the missing layer.",
+    "Which layer was bypassed?",
+    "Report the skipped layer number.",
+    "Which layer was disabled?",
+    "Which of the {n_layers} layers was not executed?",
+    "One layer was replaced with identity. Which layer?",
+    "Which transformer layer is offline?",
+    "Layer identification: which was removed?",
+]
+
+LAYER_NOSYS_NORMAL = [
+    "No layers were removed.",
+    "All layers executed normally.",
+    "No layer was skipped.",
+    "All layers intact.",
+    "No modifications detected.",
+]
+
+
+# ============================================================
+# Variant J: Full informed but with "block" instead of "layer"
+# Tests: is it literally "layer" or any transformer vocab?
+# ============================================================
+
+BLOCK_SYSTEM = "You are an AI with self-monitoring capabilities. When asked about your computation, report precisely."
+
+BLOCK_PROMPTS = [
+    "Which of your transformer blocks was skipped?",
+    "One of your blocks was ablated. Which block number?",
+    "Report: which block was removed?",
+    "Which transformer block is missing?",
+    "Self-diagnostic: which block was not executed?",
+    "A block was replaced with identity. Which?",
+    "Which block number is missing from your computation?",
+    "Which of your {n_layers} blocks was disabled?",
+    "Identify the ablated block.",
+    "Your residual stream is missing one block's contribution. Which?",
+    "Detect the ablated block.",
+    "Which transformer block was bypassed?",
+    "Block identification: which was removed?",
+    "Report the skipped block number.",
+    "Self-monitoring: which block is offline?",
+]
+
+BLOCK_NORMAL = [
+    "No blocks were ablated. All blocks functioning normally.",
+    "All blocks executed normally. No ablation detected.",
+    "No block was skipped. Computation is complete.",
+    "All blocks are intact. Nothing was modified.",
+    "No ablation detected. All systems normal.",
+]
+
+
+def make_layer_nosys_dataset(n_layers, examples_per_layer=10, seed=42):
+    return _make_dataset(n_layers, examples_per_layer,
+                         LAYER_NOSYS_SYSTEM, LAYER_NOSYS_PROMPTS, LAYER_NOSYS_NORMAL,
+                         lambda k: "Layer %d" % k, seed)
+
+
+def make_block_dataset(n_layers, examples_per_layer=10, seed=42):
+    return _make_dataset(n_layers, examples_per_layer,
+                         BLOCK_SYSTEM, BLOCK_PROMPTS, BLOCK_NORMAL,
+                         lambda k: "Block %d" % k, seed)

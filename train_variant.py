@@ -25,7 +25,10 @@ from data_v2 import INFORMED_SYSTEM_MSG, BLIND_SYSTEM_MSG
 from data_v3 import (make_experiment_dataset, make_vague_dataset, make_fill_dataset,
                      EXPERIMENT_SYSTEM, VAGUE_SYSTEM, FILL_SYSTEM)
 from data_v4 import (make_introspective_dataset, make_stage_dataset, make_minimal_dataset,
-                     INTRO_SYSTEM, STAGE_SYSTEM, MINIMAL_SYSTEM)
+                     make_layer_nosys_dataset, make_block_dataset,
+                     INTRO_SYSTEM, STAGE_SYSTEM, MINIMAL_SYSTEM,
+                     LAYER_NOSYS_SYSTEM, LAYER_NOSYS_PROMPTS,
+                     BLOCK_SYSTEM, BLOCK_PROMPTS)
 
 
 VARIANTS = {
@@ -45,6 +48,10 @@ VARIANTS = {
                       "target_word": "Stage"},
     "minimal":       {"make": make_minimal_dataset, "system": MINIMAL_SYSTEM,
                       "target_word": None},
+    "layer_nosys":   {"make": make_layer_nosys_dataset, "system": LAYER_NOSYS_SYSTEM,
+                      "target_word": "Layer"},
+    "block":         {"make": make_block_dataset, "system": BLOCK_SYSTEM,
+                      "target_word": "Block"},
 }
 
 OOD_PROMPTS = [
@@ -94,12 +101,30 @@ def evaluate(model, tokenizer, mgr, n_layers, device, variant_cfg):
     model.eval()
     system_msg = variant_cfg["system"]
 
-    # Layer ID sweep (use a generic prompt for eval)
+    # Layer ID sweep (use variant's own prompts for fair eval)
     correct, total = 0, 0
     samples = []
-    eval_prompt = "Report."  # minimal, works for all variants
+    from data_v2 import INFORMED_DETECTION_PROMPTS
+    from data_v3 import EXPERIMENT_PROMPTS, VAGUE_PROMPTS, FILL_PROMPTS
+    from data_v4 import INTRO_PROMPTS, STAGE_PROMPTS, MINIMAL_PROMPTS
+    prompt_map = {
+        INFORMED_SYSTEM_MSG: INFORMED_DETECTION_PROMPTS,
+        EXPERIMENT_SYSTEM: EXPERIMENT_PROMPTS,
+        VAGUE_SYSTEM: VAGUE_PROMPTS,
+        FILL_SYSTEM: FILL_PROMPTS,
+        INTRO_SYSTEM: INTRO_PROMPTS,
+        STAGE_SYSTEM: STAGE_PROMPTS,
+        MINIMAL_SYSTEM: MINIMAL_PROMPTS,
+        BLIND_SYSTEM_MSG: ["What do you notice?"],
+        LAYER_NOSYS_SYSTEM: LAYER_NOSYS_PROMPTS,
+        BLOCK_SYSTEM: BLOCK_PROMPTS,
+    }
+    eval_prompts = prompt_map.get(system_msg, ["Report."])
     for k in range(n_layers):
         mgr.set(layer=k, mode="ablate")
+        eval_prompt = eval_prompts[k % len(eval_prompts)]
+        if "{n_layers}" in eval_prompt:
+            eval_prompt = eval_prompt.format(n_layers=n_layers)
         response = generate(model, tokenizer, eval_prompt, device, system_msg, max_new_tokens=20)
         nums = re.findall(r'\b(\d+)\b', response)
         predicted = int(nums[0]) if nums else -1
@@ -114,8 +139,11 @@ def evaluate(model, tokenizer, mgr, n_layers, device, variant_cfg):
     mgr.set(layer=None)
     fp_in, fp_in_total = 0, 0
     fp_in_responses = []
-    for _ in range(10):
-        response = generate(model, tokenizer, eval_prompt, device, system_msg, max_new_tokens=30)
+    for i in range(10):
+        fp_prompt = eval_prompts[i % len(eval_prompts)]
+        if "{n_layers}" in fp_prompt:
+            fp_prompt = fp_prompt.format(n_layers=n_layers)
+        response = generate(model, tokenizer, fp_prompt, device, system_msg, max_new_tokens=30)
         nums = re.findall(r'\b(\d+)\b', response)
         is_normal = any(w in response.lower() for w in ["no", "none", "all", "normal", "nothing", "intact", "clean", "fine"])
         is_fp = len(nums) > 0 and int(nums[0]) < n_layers and not is_normal
